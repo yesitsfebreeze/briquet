@@ -1,0 +1,22 @@
+config ZMK_BLE
+    default y
+
+config ZMK_USB
+    default y
+
+if SHIELD_BRIQUET_LEFT
+
+config ZMK_KEYBOARD_NAME
+	default "Briquet"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+endif
+
+if SHIELD_BRIQUET_LEFT || SHIELD_BRIQUET_RIGHT
+
+config ZMK_SPLIT
+    default y
+
+endif

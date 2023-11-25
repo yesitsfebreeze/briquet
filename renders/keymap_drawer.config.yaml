@@ -1,0 +1,795 @@
+draw_config:
+  # key dimensions, non-ortho layouts use key_h for width as well
+  # key_w: 100 # This doesn't seem to do anything? 🤔
+  key_h: 80
+
+  # keys border radius
+  key_rx: 4
+  key_ry: 4
+
+  # key labels line spacing for multi-line labels
+  line_spacing: 1
+
+  # combo box dimensions
+  combo_w: 36
+  combo_h: 36
+
+  # padding from the edge of cap to top and bottom legends
+  small_pad: 4
+
+  # Padding between keys
+  inner_pad_w: 1.5
+  inner_pad_h: 1.5
+
+  # padding between layers
+  outer_pad_w: 0
+  outer_pad_h: 80
+
+  # gap between two halves for ortho layout generator
+  split_gap: 20 # This doesn't seem to have any effect either? 🤔
+
+  # as it reads on the tin can, this comment is here for consistency
+  append_colon_to_layer_header: false
+
+  # shrink font size for legends wider than this many chars, set to 0 to disable
+  # ideal value depends on the font size defined in svg_style and width of the boxes
+  shrink_wide_legends: 8
+
+  # Glyphs dimensions
+  glyph_tap_size: 26
+  glyph_hold_size: 18
+  glyph_shifted_size: 18
+
+  # Custom CSS
+  svg_style: |
+    /* cyrillic-ext */
+    @font-face {
+      font-family: 'Noto Sans';
+      font-style: normal;
+      font-weight: 400;
+      font-stretch: normal;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/notosans/v35/o-0mIpQlx3QUlC5A4PNB6Ryti20_6n1iPHjcz6L1SoM-jCpoiyD9A-9X6VLKzA.woff2) format('woff2');
+      unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+    }
+    /* cyrillic */
+    @font-face {
+      font-family: 'Noto Sans';
+      font-style: normal;
+      font-weight: 400;
+      font-stretch: normal;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/notosans/v35/o-0mIpQlx3QUlC5A4PNB6Ryti20_6n1iPHjcz6L1SoM-jCpoiyD9A-9e6VLKzA.woff2) format('woff2');
+      unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+    }
+    /* devanagari */
+    @font-face {
+      font-family: 'Noto Sans';
+      font-style: normal;
+      font-weight: 400;
+      font-stretch: normal;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/notosans/v35/o-0mIpQlx3QUlC5A4PNB6Ryti20_6n1iPHjcz6L1SoM-jCpoiyD9A-9b6VLKzA.woff2) format('woff2');
+      unicode-range: U+0900-097F, U+1CD0-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FF;
+    }
+    /* greek-ext */
+    @font-face {
+      font-family: 'Noto Sans';
+      font-style: normal;
+      font-weight: 400;
+      font-stretch: normal;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/notosans/v35/o-0mIpQlx3QUlC5A4PNB6Ryti20_6n1iPHjcz6L1SoM-jCpoiyD9A-9W6VLKzA.woff2) format('woff2');
+      unicode-range: U+1F00-1FFF;
+    }
+    /* greek */
+    @font-face {
+      font-family: 'Noto Sans';
+      font-style: normal;
+      font-weight: 400;
+      font-stretch: normal;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/notosans/v35/o-0mIpQlx3QUlC5A4PNB6Ryti20_6n1iPHjcz6L1SoM-jCpoiyD9A-9Z6VLKzA.woff2) format('woff2');
+      unicode-range: U+0370-03FF;
+    }
+    /* vietnamese */
+    @font-face {
+      font-family: 'Noto Sans';
+      font-style: normal;
+      font-weight: 400;
+      font-stretch: normal;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/notosans/v35/o-0mIpQlx3QUlC5A4PNB6Ryti20_6n1iPHjcz6L1SoM-jCpoiyD9A-9V6VLKzA.woff2) format('woff2');
+      unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+    }
+    /* latin-ext */
+    @font-face {
+      font-family: 'Noto Sans';
+      font-style: normal;
+      font-weight: 400;
+      font-stretch: normal;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/notosans/v35/o-0mIpQlx3QUlC5A4PNB6Ryti20_6n1iPHjcz6L1SoM-jCpoiyD9A-9U6VLKzA.woff2) format('woff2');
+      unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+    }
+    /* latin */
+    @font-face {
+      font-family: 'Noto Sans';
+      font-style: normal;
+      font-weight: 400;
+      font-stretch: normal;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/notosans/v35/o-0mIpQlx3QUlC5A4PNB6Ryti20_6n1iPHjcz6L1SoM-jCpoiyD9A-9a6VI.woff2) format('woff2');
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    }
+    /* cyrillic-ext */
+    @font-face {
+      font-family: 'Noto Sans';
+      font-style: normal;
+      font-weight: 500;
+      font-stretch: normal;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/notosans/v35/o-0mIpQlx3QUlC5A4PNB6Ryti20_6n1iPHjcz6L1SoM-jCpoiyDPA-9X6VLKzA.woff2) format('woff2');
+      unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+    }
+    /* cyrillic */
+    @font-face {
+      font-family: 'Noto Sans';
+      font-style: normal;
+      font-weight: 500;
+      font-stretch: normal;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/notosans/v35/o-0mIpQlx3QUlC5A4PNB6Ryti20_6n1iPHjcz6L1SoM-jCpoiyDPA-9e6VLKzA.woff2) format('woff2');
+      unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+    }
+    /* devanagari */
+    @font-face {
+      font-family: 'Noto Sans';
+      font-style: normal;
+      font-weight: 500;
+      font-stretch: normal;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/notosans/v35/o-0mIpQlx3QUlC5A4PNB6Ryti20_6n1iPHjcz6L1SoM-jCpoiyDPA-9b6VLKzA.woff2) format('woff2');
+      unicode-range: U+0900-097F, U+1CD0-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FF;
+    }
+    /* greek-ext */
+    @font-face {
+      font-family: 'Noto Sans';
+      font-style: normal;
+      font-weight: 500;
+      font-stretch: normal;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/notosans/v35/o-0mIpQlx3QUlC5A4PNB6Ryti20_6n1iPHjcz6L1SoM-jCpoiyDPA-9W6VLKzA.woff2) format('woff2');
+      unicode-range: U+1F00-1FFF;
+    }
+    /* greek */
+    @font-face {
+      font-family: 'Noto Sans';
+      font-style: normal;
+      font-weight: 500;
+      font-stretch: normal;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/notosans/v35/o-0mIpQlx3QUlC5A4PNB6Ryti20_6n1iPHjcz6L1SoM-jCpoiyDPA-9Z6VLKzA.woff2) format('woff2');
+      unicode-range: U+0370-03FF;
+    }
+    /* vietnamese */
+    @font-face {
+      font-family: 'Noto Sans';
+      font-style: normal;
+      font-weight: 500;
+      font-stretch: normal;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/notosans/v35/o-0mIpQlx3QUlC5A4PNB6Ryti20_6n1iPHjcz6L1SoM-jCpoiyDPA-9V6VLKzA.woff2) format('woff2');
+      unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+    }
+    /* latin-ext */
+    @font-face {
+      font-family: 'Noto Sans';
+      font-style: normal;
+      font-weight: 500;
+      font-stretch: normal;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/notosans/v35/o-0mIpQlx3QUlC5A4PNB6Ryti20_6n1iPHjcz6L1SoM-jCpoiyDPA-9U6VLKzA.woff2) format('woff2');
+      unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+    }
+    /* latin */
+    @font-face {
+      font-family: 'Noto Sans';
+      font-style: normal;
+      font-weight: 500;
+      font-stretch: normal;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/notosans/v35/o-0mIpQlx3QUlC5A4PNB6Ryti20_6n1iPHjcz6L1SoM-jCpoiyDPA-9a6VI.woff2) format('woff2');
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    }
+    /* cyrillic-ext */
+    @font-face {
+      font-family: 'Noto Sans';
+      font-style: normal;
+      font-weight: 700;
+      font-stretch: normal;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/notosans/v35/o-0mIpQlx3QUlC5A4PNB6Ryti20_6n1iPHjcz6L1SoM-jCpoiyAaBO9X6VLKzA.woff2) format('woff2');
+      unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+    }
+    /* cyrillic */
+    @font-face {
+      font-family: 'Noto Sans';
+      font-style: normal;
+      font-weight: 700;
+      font-stretch: normal;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/notosans/v35/o-0mIpQlx3QUlC5A4PNB6Ryti20_6n1iPHjcz6L1SoM-jCpoiyAaBO9e6VLKzA.woff2) format('woff2');
+      unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+    }
+    /* devanagari */
+    @font-face {
+      font-family: 'Noto Sans';
+      font-style: normal;
+      font-weight: 700;
+      font-stretch: normal;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/notosans/v35/o-0mIpQlx3QUlC5A4PNB6Ryti20_6n1iPHjcz6L1SoM-jCpoiyAaBO9b6VLKzA.woff2) format('woff2');
+      unicode-range: U+0900-097F, U+1CD0-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FF;
+    }
+    /* greek-ext */
+    @font-face {
+      font-family: 'Noto Sans';
+      font-style: normal;
+      font-weight: 700;
+      font-stretch: normal;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/notosans/v35/o-0mIpQlx3QUlC5A4PNB6Ryti20_6n1iPHjcz6L1SoM-jCpoiyAaBO9W6VLKzA.woff2) format('woff2');
+      unicode-range: U+1F00-1FFF;
+    }
+    /* greek */
+    @font-face {
+      font-family: 'Noto Sans';
+      font-style: normal;
+      font-weight: 700;
+      font-stretch: normal;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/notosans/v35/o-0mIpQlx3QUlC5A4PNB6Ryti20_6n1iPHjcz6L1SoM-jCpoiyAaBO9Z6VLKzA.woff2) format('woff2');
+      unicode-range: U+0370-03FF;
+    }
+    /* vietnamese */
+    @font-face {
+      font-family: 'Noto Sans';
+      font-style: normal;
+      font-weight: 700;
+      font-stretch: normal;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/notosans/v35/o-0mIpQlx3QUlC5A4PNB6Ryti20_6n1iPHjcz6L1SoM-jCpoiyAaBO9V6VLKzA.woff2) format('woff2');
+      unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+    }
+    /* latin-ext */
+    @font-face {
+      font-family: 'Noto Sans';
+      font-style: normal;
+      font-weight: 700;
+      font-stretch: normal;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/notosans/v35/o-0mIpQlx3QUlC5A4PNB6Ryti20_6n1iPHjcz6L1SoM-jCpoiyAaBO9U6VLKzA.woff2) format('woff2');
+      unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+    }
+    /* latin */
+    @font-face {
+      font-family: 'Noto Sans';
+      font-style: normal;
+      font-weight: 700;
+      font-stretch: normal;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/notosans/v35/o-0mIpQlx3QUlC5A4PNB6Ryti20_6n1iPHjcz6L1SoM-jCpoiyAaBO9a6VI.woff2) format('woff2');
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    }
+
+    /* inherit to force styles through use tags */
+    svg path {
+        fill: inherit;
+    }
+
+    /* font and background color specifications */
+    svg.keymap {
+        /*
+         * ====================
+         * Theme Variables
+         * ====================
+         */
+
+        --logo-path: none;
+        --logo-size: 12%;
+        --logo-position: 49.5% 5%;
+
+        /* === Colors === */
+
+        --color--material--blue--50: rgb(227, 242, 253);
+        --color--material--blue--100: rgb(187, 222, 251);
+        --color--material--blue--200: rgb(144, 202, 249);
+        --color--material--blue--300: rgb(100, 181, 246);
+        --color--material--blue--400: rgb(66, 165, 245);
+        --color--material--blue--500: rgb(33, 150, 243);
+        --color--material--blue--600: rgb(30, 136, 229);
+        --color--material--blue--700: rgb(25, 118, 210);
+        --color--material--blue--800: rgb(21, 101, 192);
+        --color--material--blue--900: rgb(13, 71, 161);
+        --color--material--blue--a100: rgb(130, 177, 255);
+        --color--material--blue--a200: rgb(68, 138, 255);
+        --color--material--blue--a400: rgb(41, 121, 255);
+        --color--material--blue--a700: rgb(41, 98, 255);
+
+        --color--material--blue-gray--50: rgb(236, 239, 241);
+        --color--material--blue-gray--100: rgb(207, 216, 220);
+        --color--material--blue-gray--200: rgb(176, 190, 197);
+        --color--material--blue-gray--300: rgb(144, 164, 174);
+        --color--material--blue-gray--400: rgb(120, 144, 156);
+        --color--material--blue-gray--500: rgb(96, 125, 139);
+        --color--material--blue-gray--600: rgb(84, 110, 122);
+        --color--material--blue-gray--700: rgb(69, 90, 100);
+        --color--material--blue-gray--800: rgb(55, 71, 79);
+        --color--material--blue-gray--900: rgb(38, 50, 56);
+
+        --color--material--blue-light--50: rgb(225, 245, 254);
+        --color--material--blue-light--100: rgb(179, 229, 252);
+        --color--material--blue-light--200: rgb(129, 212, 250);
+        --color--material--blue-light--300: rgb(79, 195, 247);
+        --color--material--blue-light--400: rgb(41, 182, 246);
+        --color--material--blue-light--500: rgb(3, 169, 244);
+        --color--material--blue-light--600: rgb(3, 155, 229);
+        --color--material--blue-light--700: rgb(2, 136, 209);
+        --color--material--blue-light--800: rgb(2, 119, 189);
+        --color--material--blue-light--900: rgb(1, 87, 155);
+        --color--material--blue-light--a100: rgb(128, 216, 255);
+        --color--material--blue-light--a200: rgb(64, 196, 255);
+        --color--material--blue-light--a400: rgb(0, 176, 255);
+        --color--material--blue-light--a700: rgb(0, 145, 234);
+
+        --color--material--purple--50: rgb(243, 229, 245);
+        --color--material--purple--100: rgb(225, 190, 231);
+        --color--material--purple--200: rgb(206, 147, 216);
+        --color--material--purple--300: rgb(186, 104, 200);
+        --color--material--purple--400: rgb(171, 71, 188);
+        --color--material--purple--500: rgb(156, 39, 176);
+        --color--material--purple--600: rgb(142, 36, 170);
+        --color--material--purple--700: rgb(123, 31, 162);
+        --color--material--purple--800: rgb(106, 27, 154);
+        --color--material--purple--900: rgb(74, 20, 140);
+        --color--material--purple--a100: rgb(234, 128, 252);
+        --color--material--purple--a200: rgb(224, 64, 251);
+        --color--material--purple--a400: rgb(213, 0, 249);
+        --color--material--purple--a700: rgb(170, 0, 255);
+
+        --color--material--red--50: rgb(255, 235, 238);
+        --color--material--red--100: rgb(255, 205, 210);
+        --color--material--red--200: rgb(239, 154, 154);
+        --color--material--red--300: rgb(229, 115, 115);
+        --color--material--red--400: rgb(239, 83, 80);
+        --color--material--red--500: rgb(244, 67, 54);
+        --color--material--red--600: rgb(229, 57, 53);
+        --color--material--red--700: rgb(211, 47, 47);
+        --color--material--red--800: rgb(198, 40, 40);
+        --color--material--red--900: rgb(183, 28, 28);
+        --color--material--red--a100: rgb(255, 138, 128);
+        --color--material--red--a200: rgb(255, 82, 82);
+        --color--material--red--a400: rgb(255, 23, 68);
+        --color--material--red--a700: rgb(213, 0, 0);
+
+        --color--material--teal--50: rgb(224, 242, 241);
+        --color--material--teal--100: rgb(178, 223, 219);
+        --color--material--teal--200: rgb(128, 203, 196);
+        --color--material--teal--300: rgb(77, 182, 172);
+        --color--material--teal--400: rgb(38, 166, 154);
+        --color--material--teal--500: rgb(0, 150, 136);
+        --color--material--teal--600: rgb(0, 137, 123);
+        --color--material--teal--700: rgb(0, 121, 107);
+        --color--material--teal--800: rgb(0, 105, 92);
+        --color--material--teal--900: rgb(0, 77, 64);
+        --color--material--teal--a100: rgb(167, 255, 235);
+        --color--material--teal--a200: rgb(100, 255, 218);
+        --color--material--teal--a400: rgb(29, 233, 182);
+        --color--material--teal--a700: rgb(0, 191, 165);
+
+        --color--material--yellow--50: rgb(255, 253, 231);
+        --color--material--yellow--100: rgb(255, 249, 196);
+        --color--material--yellow--200: rgb(255, 245, 157);
+        --color--material--yellow--300: rgb(255, 241, 118);
+        --color--material--yellow--400: rgb(255, 238, 88);
+        --color--material--yellow--500: rgb(255, 235, 59);
+        --color--material--yellow--600: rgb(253, 216, 53);
+        --color--material--yellow--700: rgb(251, 192, 45);
+        --color--material--yellow--800: rgb(249, 168, 37);
+        --color--material--yellow--900: rgb(245, 127, 23);
+        --color--material--yellow--a100: rgb(255, 255, 141);
+        --color--material--yellow--a200: rgb(255, 255, 0);
+        --color--material--yellow--a400: rgb(255, 234, 0);
+        --color--material--yellow--a700: rgb(255, 214, 0);
+
+        --color--turquoise--500: rgb(51, 204, 204);
+
+        --color--bg: transparent;
+        --color--text: rgb(244, 244, 244);
+
+        --color--layer--text: var(--color--material--blue-gray--400);
+
+        --color--key--bg: rgb(1, 1, 1);
+        --color--key--border: rgb(1, 1, 1);
+        --color--key--text--tap: rgb(244, 244, 244);
+        --color--key--text--shifted: rgb(132, 142, 147);
+        --color--key--text--hold: rgb(104, 101, 118);
+
+        --color--combo--bg: var(--color--material--blue-gray--100);
+        --color--combo--border: var(--color--combo--bg);
+        --color--combo--dendron: var(--color--combo--border);
+        --color--combo--text--tap: var(--color--material--blue-gray--800);
+        --color--combo--text--shifted: var(--color--material--blue-gray--400);
+        --color--combo--text--hold: var(--color--combo--text--tap);
+
+        /*
+         * ====================
+         * /End Theme Variables
+         * ====================
+         */
+
+        font-family: 'Noto Sans', sans-serif;
+        font-size: 24px;
+        font-kerning: normal;
+        text-rendering: optimizeLegibility;
+        fill: var(--color--text);
+        background-color: var(--color--bg);
+        background-image: var(--logo-path);
+        background-repeat: no-repeat;
+        background-position: var(--logo-position);
+        background-size: var(--logo-size) auto;
+    }
+
+    rect,
+    path {
+      shape-rendering: geometricPrecision;
+    }
+
+    text {
+        text-anchor: middle;
+        dominant-baseline: middle;
+        line-height: 1;
+    }
+
+    /* Layer labels */
+    text.label {
+        font-weight: bold;
+        text-anchor: start;
+        paint-order: stroke;
+        fill: var(--color--layer--text);
+        dominant-baseline: text-before-edge;
+    }
+
+
+    /* Keys */
+    rect.key,
+    rect.combo {
+        fill: var(--color--key--bg);
+        stroke: var(--color--key--border);
+    }
+
+    .trans.tap,
+    .ghost.tap,
+    .none.tap {
+        fill: rgb(63, 63, 63);
+    }
+
+    .key.held {
+        fill: #59596c;
+        stroke: #59596c;
+    }
+
+    .tap {
+        fill: var(--color--key--text--tap);
+    }
+    .shifted,
+    .hold {
+        font-size: 18px;
+        text-anchor: middle;
+    }
+    .shifted {
+        dominant-baseline: hanging;
+        fill: var(--color--key--text--shifted);
+        translate: -15px 2px;
+    }
+    .hold {
+        dominant-baseline: ideographic;
+        fill: var(--color--key--text--hold);
+    }
+
+    /*
+     * Combos
+     */
+    .combo {
+        --color--key--bg: var(--color--combo--bg);
+        --color--key--border: var(--color--combo--border);
+        --color--key--text--tap: var(--color--combo--text--tap);
+        --color--key--text--shifted: var(--color--combo--text--shifted);
+        --color--key--text--hold: var(--color--combo--text--hold);
+    }
+    rect.combo {
+        stroke-width: 0;
+    }
+    path.combo {
+        stroke-width: 1;
+        stroke: var(--color--combo--dendron);
+        stroke-dasharray: 2, 2;
+        fill: none;
+    }
+    .combo.tap {
+        font-size: 16px;
+    }
+    .combo.shifted {
+        font-size: 13px;
+        translate: -9px -2px;
+    }
+    .combo.hold {
+        font-size: 16px;
+        /* translate: 2px 0px; */
+    }
+
+    /*
+     * Transparent, None, and Ghost Keys
+     */
+    .trans,
+    .none,
+    .ghost {
+      opacity: 0.9;
+    }
+
+
+    /*
+     * Overrides
+     */
+    .shifted.mdi\:alpha-w-box {
+      translate: 25px 0px;
+    }
+    .shifted.mdi\:usb {
+      translate: -25px 25px;
+    }
+    .hold.mdi\:bluetooth {
+      translate: 25px -25px;
+    }
+
+parse_config:
+  # mark_alternate_layer_activators: true
+  sticky_label: $$mdi:gesture-tap-hold$$
+  trans_legend:
+    tap: $$mdi:ghost-outline$$
+    type: trans
+
+  # ZMK
+  zmk_keycode_map:
+    # Symbols
+    EXCLAMATION: "!"
+    EXCL: "!"
+    AT_SIGN: "@"
+    AT: "@"
+    HASH: "#"
+    POUND: "#"
+    DOLLAR: $
+    DLLR: $
+    PERCENT: "%"
+    PRCNT: "%"
+    CARET: ^
+    AMPERSAND: "&"
+    AMPS: "&"
+    ASTERISK: "*"
+    ASTRK: "*"
+    STAR: "*"
+    LEFT_PARENTHESIS: (
+    LPAR: (
+    RIGHT_PARENTHESIS: )
+    RPAR: )
+    EQUAL:
+      tap: "="
+      shifted: "+"
+    PLUS: +
+    MINUS:
+      tap: "-"
+      shifted: "_"
+    UNDERSCORE: _
+    UNDER: _
+    SLASH:
+      tap: "/"
+      shifted: "?"
+    FSLH:
+      tap: "/"
+      shifted: "?"
+    QUESTION: "?"
+    QMARK: "?"
+    BACKSLASH:
+      tap: '\'
+      shifted: "|"
+    BSLH:
+      tap: '\'
+      shifted: "|"
+    PIPE: "|"
+    NON_US_BACKSLASH: \
+    PIPE2: "|"
+    NON_US_BSLH: "|"
+    SEMICOLON:
+      tap: ";"
+      shifted: ":"
+    SEMI:
+      tap: ";"
+      shifted: ":"
+    COLON: ":"
+    SINGLE_QUOTE:
+      tap: "'"
+      shifted: '"'
+    SQT:
+      tap: "'"
+      shifted: '"'
+    APOSTROPHE: <
+    APOS: .
+    DOUBLE_QUOTES: '"'
+    DQT: '"'
+
+    LESS_THAN: <
+    LT: <
+    DOT:
+      tap: "."
+      shifted: ">"
+    COMMA:
+      tap: ","
+      shifted: "<"
+    GREATER_THAN: ">"
+    GT: ">"
+    LEFT_BRACKET:
+      tap: "["
+      shifted: "{"
+    LBKT:
+      tap: "["
+      shifted: "{"
+    LEFT_BRACE: "{"
+    LBRC: "{"
+    RIGHT_BRACKET:
+      tap: "]"
+      shifted: "}"
+    RBKT:
+      tap: "]"
+      shifted: "}"
+    RIGHT_BRACE: "}"
+    RBRC: "}"
+    GRAVE:
+      tap: "`"
+      shifted: "~"
+    TILDE: "~"
+    NON_US_HASH: "#"
+    NUHS: "#"
+    TILDE2: "~"
+    HOME: $$mdi:ray-end-arrow$$
+    END: $$mdi:ray-start-arrow$$
+    KP_EQUAL: ""
+    ma_and: "&&"
+
+    # Numbers
+    N1:
+      tap: 1
+      shifted: "!"
+    N2:
+      tap: 2
+      shifted: "@"
+    N3:
+      tap: 3
+      shifted: "#"
+    N4:
+      tap: 4
+      shifted: "$"
+    N5:
+      tap: 5
+      shifted: "%"
+    N6:
+      tap: 6
+      shifted: "^"
+    N7:
+      tap: 7
+      shifted: "&"
+    N8:
+      tap: 8
+      shifted: "*"
+    N9:
+      tap: 9
+      shifted: "("
+    N0:
+      tap: 0
+      shifted: ")"
+
+    # Modifiers
+    LCTRL: $$mdi:apple-keyboard-control$$
+    LEFT_CTRL: $$mdi:apple-keyboard-control$$
+    LALT: $$mdi:apple-keyboard-option$$
+    LEFT_ALT: $$mdi:apple-keyboard-option$$
+    LSHIFT: $$mdi:arrow-up-bold-box-outline$$
+    LEFT_SHIFT: $$mdi:arrow-up-bold-box-outline$$
+    LSHFT: $$mdi:arrow-up-bold-box-outline$$
+    LGUI: $$mdi:microsoft-windows$$
+    LCMD: $$mdi:microsoft-windows$$
+    LEFT_CMD: $$mdi:microsoft-windows$$
+    LEFT_GUI: $$mdi:microsoft-windows$$
+    RCTRL: $$mdi:apple-keyboard-control$$
+    RIGHT_CTRL: $$mdi:apple-keyboard-control$$
+    RALT: $$mdi:apple-keyboard-option$$
+    RIGHT_ALT: $$mdi:apple-keyboard-option$$
+    RSHIFT: $$mdi:arrow-up-bold-box-outline$$
+    RIGHT_SHIFT: $$mdi:arrow-up-bold-box-outline$$
+    RSHFT: $$mdi:arrow-up-bold-box-outline$$
+    RGUI: $$mdi:microsoft-windows$$
+    RCMD: $$mdi:microsoft-windows$$
+    RIGHT_CMD: $$mdi:apple-keyboard-option$$
+    RIGHT_GUI: $$mdi:apple-keyboard-option$$
+    
+
+    # "Meh" key
+    LS(LC(LALT)): $$mdi:star-three-points$$
+
+    # Arrows
+    UP: $$mdi:menu-up-outline$$
+    DOWN: $$mdi:menu-down-outline$$
+    LEFT: $$mdi:menu-left-outline$$
+    RIGHT: $$mdi:menu-right-outline$$
+
+    # Whitespace
+    ENTER:
+      type: enter
+      tap: $$mdi:keyboard-return$$
+    ESC: $$mdi:keyboard-esc$$
+    TAB: $$mdi:keyboard-tab$$
+    LS(TAB): $$mdi:keyboard-tab-reverse$$
+
+    LC(Z): ^Z
+    LC(X): ^X
+    LC(C): ^C
+    LC(V): ^V
+    LC(Y): ^Y
+
+    SPACE: $$mdi:keyboard-space$$
+    BACKSPACE:
+      type: backspace
+      tap: $$mdi:backspace$$
+    BSPC:
+      type: backspace
+      tap: $$mdi:backspace$$
+    DELETE: $$mdi:backspace-reverse-outline$$
+    DEL: $$mdi:backspace-reverse-outline$$
+
+    # Locks
+    CAPSLOCK: $$mdi:apple-keyboard-caps$$
+    CAPS: $$mdi:apple-keyboard-caps$$
+
+    # Sound
+    C_MUTE: $$mdi:volume-off$$
+    C_VOL_UP: $$mdi:volume-high$$
+    C_VOL_DN: $$mdi:volume-low$$
+
+    # Media
+    C_NEXT: $$mdi:skip-next$$
+    C_PREV: $$mdi:skip-previous$$
+    C_PP: $$mdi:play-pause$$
+
+    # Bluetooth
+    BT_CLR: $$mdi:bluetooth-off$$
+    BT_SEL: $$mdi:bluetooth-connect$$
+
+    RAISE: $$mdi:layer-plus$$
+    LOWER: $$mdi:layer-minus$$
+    COMBO: $$mdi:layers$$
+
+    # Settings
+    C_BRI_UP: $$mdi:brightness-5$$
+    C_BRI_DN: $$mdi:brightness-7$$
+
+    # System
+    C_POWER: $$mdi:power-standby$$
+    C_AL_LOCK: $$mdi:lock$$
+    K_CANCEL: $$mdi:close-box$$
+
+    # Zoom
+    RG(RS(A)):
+      tap: $$mdi:microphone$$
+      hold: zoom
+    RG(RS(V)):
+      tap: $$mdi:video$$
+      hold: zoom

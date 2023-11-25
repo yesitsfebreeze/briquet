@@ -1,0 +1,13 @@
+on: [push, pull_request, workflow_dispatch]
+
+jobs:
+  draw:
+    uses: caksoylar/keymap-drawer/.github/workflows/draw-zmk.yml@main
+    permissions:
+      contents: write
+    with:
+      keymap_patterns: "config/*.keymap"
+      config_path: "renders/keymap_drawer.config.yaml"
+      output_folder: "renders"
+      parse_args: ""
+      draw_args: ""

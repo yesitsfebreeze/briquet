@@ -1,0 +1,18 @@
+layout: {ortho_layout: {split: true, rows: 3, columns: 5}}
+layers:
+  BASE:
+    - [Q, W, E, R, T,     {t: Y, h: "ˆY"}, U, I, O, P]
+    - [A, S, {t: D, h: $$tabler:perspective$$}, {t: F, h: $$tabler:arrow-bear-right-2$$}, {t: G, h: $$tabler:arrow-big-up-line-filled$$},     {t: H, h: $$tabler:arrow-big-up-line-filled$$}, {t: J, h: $$tabler:arrow-bear-right-2$$}, {t: K, h: $$tabler:perspective$$}, L, {t: ENTER, s: "$$tabler:backspace$$", h: $$tabler:arrow-big-up-line-filled$$}]
+    - [{t: Z, h: "ˆZ"}, {t: X, h: "ˆX"},{t: C, h: "ˆC"},{t: V, h: "ˆV"}, {t: SPC, h: RIGHT},   {t: SPC, h: LEFT},B, N, M, {t: _, h: $$tabler:chevron-up$$}]
+  LEFT:
+    - [ESC, HOME, 🠕, END, {t: "(", s: "{"},     {t: ")", s: "}"}, "", {t: "*", s: "/"}, {t: -, s: +}, "="]
+    - [TAB, 🠔, 🠗, ➝, $$tabler:arrow-big-up-line-filled$$,     $$tabler:arrow-big-up-line-filled$$, $$tabler:arrow-bear-right-2$$, {t: ';', s: ":", h: $$tabler:perspective$$}, {t: '"', s: "'"}, {t: ENTER, s: "$$tabler:backspace$$", h: $$tabler:arrow-big-up-line-filled$$}]
+    - ["ˆZ", "ˆX", "ˆC", "ˆV", {t: SPC, h: BOTH},   {type: "held"},{t: "/", s: "\\"}, {t: ",", s: "!"}, {t: ".", s: "?"}, {t: -, s: +, h: $$tabler:chevron-up$$}]
+  RIGHT:
+    - [ESC, "MB1", "M🠕", "MB2", {t: ".", s: ","},   {t: "*", s: "/"}, {t: "1", s: "!"}, {t: "2", s: "@"}, {t: "3", s: "#"}, "="]
+    - [TAB, "🠔M", "M🠗", "M➝", $$tabler:arrow-big-up-line-filled$$,   0, {t: "4", s: "$"}, {t: "5", s: "%"}, {t: "6", s: "^"}, {t: ENTER, s: "$$tabler:backspace$$", h: $$tabler:arrow-big-up-line-filled$$}]
+    - ["ˆZ", "MW🠕", "MB3", "MW🠗", {type: "held"},   {t: SPC, h: BOTH},{t: "7", s: "&"}, {t: "8", s: "*"}, {t: "9", s: "~"}, {t: -, s: +, h: $$tabler:chevron-up$$}]
+  BOTH:
+    - [BOOT, {t: "&", s: "&&"}, {t: "|", s: "||"}, "->", {t: "[", s: "<"},   {t: "]", s: ">"}, F1, F2, F3, BOOT]
+    - [BT_NXT, "", "", "", $$tabler:arrow-big-up-line-filled$$,   $$tabler:arrow-big-up-line-filled$$, F4, F5, F6, BT_NXT]
+    - [BT_CLR, "", "", "", {type: "held"},   {type: "held"}, F7, F8, F9, BT_CLR]

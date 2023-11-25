@@ -1,0 +1,250 @@
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/mouse.h>
+#include <dt-bindings/zmk/keys.h>
+
+&mt {
+    tapping-term-ms = <250>;
+    flavor = "tap-preferred";
+};
+
+&sk {
+    release-after-ms = <2000>;
+    quick-release;
+};
+
+&caps_word {
+    continue-list = <UNDERSCORE BACKSPACE DELETE MINUS>;
+};
+
+/* Layers */
+
+#define BASE 0
+#define LOWER 1
+#define RAISE 2
+#define COMBO 3
+
+/ {
+    behaviors {
+        ht: ht {
+            compatible = "zmk,behavior-hold-tap";
+            label = "Hold&Tap";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <170>;
+            flavor = "tap-preferred";
+        };
+
+        lprn: lprn {
+            compatible = "zmk,behavior-mod-morph";
+            label = "LPRN";
+            bindings = <&kp LEFT_PARENTHESIS>, <&kp LEFT_BRACE>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+
+        rpen: rpen {
+            compatible = "zmk,behavior-mod-morph";
+            label = "RPEN";
+            bindings = <&kp RIGHT_PARENTHESIS>, <&kp RIGHT_BRACE>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+
+        entbsp: entbsp {
+            compatible = "zmk,behavior-mod-morph";
+            label = "ENTBSP";
+            bindings = <&kp ENTER>, <&kp BACKSPACE>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+
+        slash: slash {
+            compatible = "zmk,behavior-mod-morph";
+            label = "SLASH";
+            bindings = <&kp SLASH>, <&kp NON_US_BACKSLASH>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+
+        lbrkt: lbrkt {
+            compatible = "zmk,behavior-mod-morph";
+            label = "LBRKT";
+            bindings = <&kp LEFT_BRACKET>, <&kp LESS_THAN>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+
+        rbrkt: rbrkt {
+            compatible = "zmk,behavior-mod-morph";
+            label = "RBRKT";
+            bindings = <&kp RIGHT_BRACKET>, <&kp GREATER_THAN>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+
+        nine_tilde: nine_tilde {
+            compatible = "zmk,behavior-mod-morph";
+            label = "NINE_TILDE";
+            bindings = <&kp N9>, <&kp TILDE>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+
+        semi_col: semi_col {
+            compatible = "zmk,behavior-mod-morph";
+            label = "SEMI_COL";
+            bindings = <&kp SEMICOLON>, <&kp COLON>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+
+        and: and {
+            compatible = "zmk,behavior-mod-morph";
+            label = "AND";
+            bindings = <&kp AMPERSAND>, <&ma_and>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+
+        semicol: semicol {
+            compatible = "zmk,behavior-mod-morph";
+            label = "SEMICOL";
+            bindings = <&kp SEMICOLON>, <&kp COLON>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+
+        hold_semicol: hold_semicol {
+            compatible = "zmk,behavior-hold-tap";
+            label = "Hold&Semicol";
+            bindings = <&kp>, <&semicol>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <170>;
+            flavor = "tap-preferred";
+        };
+
+        quot: quot {
+            compatible = "zmk,behavior-mod-morph";
+            label = "quot";
+            bindings = <&kp DOUBLE_QUOTES>, <&kp SQT>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+
+        hold_quot: hold_quot {
+            compatible = "zmk,behavior-hold-tap";
+            label = "Hold&Quot";
+            bindings = <&kp>, <&quot>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <170>;
+            flavor = "tap-preferred";
+        };
+
+        eql_only: eql_only {
+            compatible = "zmk,behavior-mod-morph";
+            label = "EQL_ONLY";
+            bindings = <&kp EQUAL>, <&kp KP_EQUAL>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+
+        or: or {
+            compatible = "zmk,behavior-mod-morph";
+            label = "OR";
+            bindings = <&kp PIPE>, <&ma_or>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+    };
+
+    macros {
+        ma_equal: ma_equal {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp EQUAL &kp EQUAL>, <&macro_press>;
+
+            label = "MA_EQUAL";
+        };
+
+        ma_pointer: ma_pointer {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp MINUS &kp GT>;
+            label = "MA_POINTER";
+        };
+
+        ma_or: ma_or {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp PIPE &kp PIPE>;
+            label = "MA_OR";
+        };
+
+        ma_and: ma_and {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp AMPS &kp AMPS>;
+            label = "MA_AND";
+        };
+    };
+
+    keymap {
+        compatible = "zmk,keymap";
+
+        BASE {
+            bindings = <
+&kp Q        &kp W        &kp E           &kp R           &kp T        &ht LC(Y) Y  &kp U            &kp I           &kp O        &kp P
+&kp A        &ht LCTRL S  &ht LEFT_GUI D  &ht LEFT_ALT F  &ht LSHFT G  &ht LSHFT H  &ht RIGHT_ALT J  &ht LEFT_GUI K  &ht RCTRL L  &entbsp
+&ht LC(Z) Z  &ht LC(X) X  &ht LC(C) C     &ht LC(V) V     &lt 1 SPACE  &lt 2 SPACE  &kp B            &kp N           &kp M        &ht LCTRL UNDER
+            >;
+
+            label = "BASE";
+        };
+
+        LOWER {
+            bindings = <
+&gresc     &kp HOME   &kp UP     &kp END    &lprn      &rpen        &trans    &trans                &trans              &eql_only
+&kp TAB    &kp LEFT   &kp DOWN   &kp RIGHT  &kp LSHFT  &kp LSHFT    &kp LALT  &hold_semicol LGUI 0  &hold_quot LCTRL 0  &trans
+&kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &trans     &lt 3 SPACE  &slash    &trans                &trans              &trans
+            >;
+
+            label = "LOWER";
+        };
+
+        RAISE {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans          &trans           &kp N1  &kp N2  &kp N3       &trans
+&trans  &trans  &trans  &trans  &kp LEFT_SHIFT  &kp RIGHT_SHIFT  &kp N4  &kp N5  &kp N6       &trans
+&trans  &trans  &trans  &trans  &lt 3 SPACE     &trans           &kp N7  &kp N8  &nine_tilde  &kp N0
+            >;
+
+            label = "RAISE";
+        };
+
+        COMBO {
+            bindings = <
+&trans  &and    &or        &ma_pointer  &lbrkt     &rbrkt     &kp F1  &kp F2  &kp F3  &trans
+&trans  &trans  &ma_equal  &trans       &kp LSHFT  &kp LSHFT  &kp F4  &kp F5  &kp F6  &trans
+&trans  &trans  &trans     &trans       &trans     &trans     &kp F7  &kp F8  &kp F9  &trans
+            >;
+
+            label = "COMBO";
+        };
+    };
+};
