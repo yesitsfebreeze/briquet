@@ -35,18 +35,18 @@ layers:
   - $$mdi:ray-end-arrow$$
   - $$mdi:menu-up-outline$$
   - $$mdi:ray-start-arrow$$
-  - {t: (, s: '{'}
-  - {t: ), s: '}'}
-  - {t: '$$mdi:ghost$$', type: trans}
-  - {t: '$$mdi:ghost$$', type: trans}
-  - {t: '$$mdi:ghost$$', type: trans}
+  - {t: '[', s: <}
+  - {t: ']', s: '>'}
+  - ''
+  - ''
+  - ''
   - '='
   - $$mdi:keyboard-tab$$
   - $$mdi:menu-left-outline$$
   - $$mdi:menu-down-outline$$
   - $$mdi:menu-right-outline$$
-  - $$mdi:arrow-up-bold$$
-  - $$mdi:arrow-up-bold$$
+  - {t: (, s: '{'}
+  - {t: ), s: '}'}
   - $$mdi:apple-keyboard-option$$
   - {t: ;, h: '$$mdi:microsoft-windows$$', s: ':'}
   - {t: '"', h: '$$mdi:apple-keyboard-control$$', s: ''''}
@@ -60,18 +60,18 @@ layers:
   - {t: /, s: \}
   - {t: ',', s: '!'}
   - {t: ., s: '?'}
-  - {t: '$$mdi:ghost$$', type: trans}
+  - ''
   RAISE:
   - {t: '$$mdi:keyboard-esc$$', s: '`'}
   - MB1
   - $$mdi:mouse$$
   - MB2
-  - {t: '$$mdi:ghost$$', type: trans}
-  - {t: '$$mdi:ghost$$', type: trans}
+  - ''
+  - ''
   - {t: '1', s: '!'}
   - {t: '2', s: '@'}
   - {t: '3', s: '#'}
-  - {t: '$$mdi:ghost$$', type: trans}
+  - ''
   - $$mdi:keyboard-tab$$
   - $$mdi:mouse$$
   - $$mdi:mouse$$
@@ -82,10 +82,10 @@ layers:
   - {t: '5', s: '%'}
   - {t: '6', s: ^}
   - {t: '$$mdi:keyboard-return$$', h: '$$mdi:arrow-up-bold$$', s: '$$mdi:backspace$$'}
-  - {t: '$$mdi:ghost$$', type: trans}
-  - {t: '$$mdi:ghost$$', type: trans}
+  - ''
+  - ''
   - MB3
-  - {t: '$$mdi:ghost$$', type: trans}
+  - ''
   - {t: '$$mdi:keyboard-space$$', h: COMBO}
   - {type: held}
   - {t: '7', s: '&'}
@@ -93,33 +93,33 @@ layers:
   - {t: '9', s: '~'}
   - {t: '0', s: )}
   COMBO:
-  - {t: '$$mdi:ghost$$', type: trans}
+  - ''
   - {t: '&', s: '&&'}
   - {t: '|', s: '||'}
   - ->
-  - {t: '[', s: <}
-  - {t: ']', s: '>'}
+  - ''
+  - ''
   - F1
   - F2
   - F3
-  - {t: '$$mdi:ghost$$', type: trans}
-  - {t: '$$mdi:ghost$$', type: trans}
-  - {t: '$$mdi:ghost$$', type: trans}
+  - ''
+  - ''
+  - ''
   - ==
-  - {t: '$$mdi:ghost$$', type: trans}
-  - $$mdi:arrow-up-bold$$
-  - $$mdi:arrow-up-bold$$
+  - ''
+  - ''
+  - ''
   - F4
   - F5
   - F6
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - {t: '$$mdi:ghost$$', type: trans}
-  - {t: '$$mdi:ghost$$', type: trans}
-  - {t: '$$mdi:ghost$$', type: trans}
-  - {t: '$$mdi:ghost$$', type: trans}
+  - ''
+  - ''
+  - ''
+  - ''
   - {type: held}
   - {type: held}
   - F7
   - F8
   - F9
-  - {t: '$$mdi:ghost$$', type: trans}
+  - ''
