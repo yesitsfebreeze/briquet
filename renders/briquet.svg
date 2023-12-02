@@ -539,9 +539,9 @@ path.combo {
 /*
  * Transparent, None, and Ghost Keys
  */
-.trans,
-.none,
-.ghost {
+rect.key.trans,
+rect.key.none,
+rect.key.ghost {
   fill: rgb(13, 17, 23);
   stroke: rgb(13, 17, 23);
 }
