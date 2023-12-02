@@ -476,8 +476,8 @@ draw_config:
     }
 
     .key.held {
-        fill: #59596c;
-        stroke: #59596c;
+        fill: #FF6961;
+        stroke: #FF6961;
     }
 
     .tap {
