@@ -63,9 +63,9 @@ layers:
   - {t: '$$mdi:ghost-outline$$', type: trans}
   RAISE:
   - {t: '$$mdi:ghost-outline$$', type: trans}
-  - LCLK
-  - {t: '$$mdi:ghost-outline$$', type: trans}
-  - RCLK
+  - '&mkp LCLK'
+  - '&mmv MOVE_UP'
+  - '&mkp RCLK'
   - {t: '$$mdi:ghost-outline$$', type: trans}
   - {t: '$$mdi:ghost-outline$$', type: trans}
   - {t: '1', s: '!'}
@@ -73,9 +73,9 @@ layers:
   - {t: '3', s: '#'}
   - {t: '$$mdi:ghost-outline$$', type: trans}
   - {t: '$$mdi:ghost-outline$$', type: trans}
-  - {t: '$$mdi:ghost-outline$$', type: trans}
-  - {t: '$$mdi:ghost-outline$$', type: trans}
-  - {t: '$$mdi:ghost-outline$$', type: trans}
+  - '&mmv MOVE_LEFT'
+  - '&mmv MOVE_DOWN'
+  - '&mmv MOVE_RIGHT'
   - $$mdi:arrow-up-bold-box-outline$$
   - $$mdi:arrow-up-bold-box-outline$$
   - {t: '4', s: $}
@@ -84,7 +84,7 @@ layers:
   - {t: '$$mdi:ghost-outline$$', type: trans}
   - {t: '$$mdi:ghost-outline$$', type: trans}
   - {t: '$$mdi:ghost-outline$$', type: trans}
-  - {t: '$$mdi:ghost-outline$$', type: trans}
+  - MCLK
   - {t: '$$mdi:ghost-outline$$', type: trans}
   - {t: '$$mdi:keyboard-space$$', h: COMBO}
   - {type: held}
