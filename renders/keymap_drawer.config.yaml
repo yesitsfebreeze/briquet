@@ -710,9 +710,9 @@ parse_config:
     LEFT_CTRL: $$mdi:apple-keyboard-control$$
     LALT: $$mdi:apple-keyboard-option$$
     LEFT_ALT: $$mdi:apple-keyboard-option$$
-    LSHIFT: $$mdi:arrow-up-bold-box-outline$$
-    LEFT_SHIFT: $$mdi:arrow-up-bold-box-outline$$
-    LSHFT: $$mdi:arrow-up-bold-box-outline$$
+    LSHIFT: $$mdi:arrow-up-bold$$
+    LEFT_SHIFT: $$mdi:arrow-up-bold$$
+    LSHFT: $$mdi:arrow-up-bold$$
     LGUI: $$mdi:microsoft-windows$$
     LCMD: $$mdi:microsoft-windows$$
     LEFT_CMD: $$mdi:microsoft-windows$$
@@ -721,9 +721,9 @@ parse_config:
     RIGHT_CTRL: $$mdi:apple-keyboard-control$$
     RALT: $$mdi:apple-keyboard-option$$
     RIGHT_ALT: $$mdi:apple-keyboard-option$$
-    RSHIFT: $$mdi:arrow-up-bold-box-outline$$
-    RIGHT_SHIFT: $$mdi:arrow-up-bold-box-outline$$
-    RSHFT: $$mdi:arrow-up-bold-box-outline$$
+    RSHIFT: $$mdi:arrow-up-bold$$
+    RIGHT_SHIFT: $$mdi:arrow-up-bold$$
+    RSHFT: $$mdi:arrow-up-bold$$
     RGUI: $$mdi:microsoft-windows$$
     RCMD: $$mdi:microsoft-windows$$
     RIGHT_CMD: $$mdi:apple-keyboard-option$$
