@@ -249,7 +249,7 @@
             bindings = <
 &gresc     &kp HOME   &kp UP     &kp END    &lbrkt       &rbrkt  &none     &none                 &none               &eql_only
 &kp TAB    &kp LEFT   &kp DOWN   &kp RIGHT  &lprn        &rpen   &kp LALT  &hold_semicol LGUI 0  &hold_quot LCTRL 0  &hold_ent_bsp LEFT_SHIFT 0
-&kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &lt 3 SPACE  &none   &slash    &com_excl             &dot_ques           &none
+&kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &lt 3 SPACE  &none   &slash    &com_excl             &dot_ques           &kp MINUS
             >;
 
             label = "LOWER";
