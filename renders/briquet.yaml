@@ -29,7 +29,7 @@ layers:
   - B
   - N
   - M
-  - _
+  - {t: _, s: '$$mdi:backspace-reverse-outline$$'}
   LOWER:
   - {t: '$$mdi:keyboard-esc$$', s: '`'}
   - $$mdi:ray-end-arrow$$
