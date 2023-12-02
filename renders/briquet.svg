@@ -548,6 +548,7 @@ rect.key.none,
 rect.key.ghost {
   fill: transparent;
   stroke: transparent;
+  opacity: 0.5;
 }
 
 
