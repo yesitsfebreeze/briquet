@@ -64,7 +64,7 @@ layers:
   RAISE:
   - {t: '$$mdi:ghost-outline$$', type: trans}
   - '&mkp LCLK'
-  - '&mmv MOVE_UP'
+  - $$mdi:mouse$$
   - '&mkp RCLK'
   - {t: '$$mdi:ghost-outline$$', type: trans}
   - {t: '$$mdi:ghost-outline$$', type: trans}
@@ -73,9 +73,9 @@ layers:
   - {t: '3', s: '#'}
   - {t: '$$mdi:ghost-outline$$', type: trans}
   - {t: '$$mdi:ghost-outline$$', type: trans}
-  - '&mmv MOVE_LEFT'
-  - '&mmv MOVE_DOWN'
-  - '&mmv MOVE_RIGHT'
+  - $$mdi:mouse$$
+  - $$mdi:mouse$$
+  - $$mdi:mouse$$
   - $$mdi:arrow-up-bold$$
   - $$mdi:arrow-up-bold$$
   - {t: '4', s: $}
