@@ -841,17 +841,17 @@ path.combo {
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key trans"/>
 <use href="#mdi:ghost-outline" xlink:href="#mdi:ghost-outline" x="-13" y="-13" height="26" width="26.0" class="key trans tap glyph mdi:ghost-outline"/>
 </g>
-<g transform="translate(120, 40)" class="key trans keypos-1">
-<rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key trans"/>
-<use href="#mdi:ghost-outline" xlink:href="#mdi:ghost-outline" x="-13" y="-13" height="26" width="26.0" class="key trans tap glyph mdi:ghost-outline"/>
+<g transform="translate(120, 40)" class="key keypos-1">
+<rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
+<text x="0" y="0" class="key tap">LCLK</text>
 </g>
 <g transform="translate(200, 40)" class="key trans keypos-2">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key trans"/>
 <use href="#mdi:ghost-outline" xlink:href="#mdi:ghost-outline" x="-13" y="-13" height="26" width="26.0" class="key trans tap glyph mdi:ghost-outline"/>
 </g>
-<g transform="translate(280, 40)" class="key trans keypos-3">
-<rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key trans"/>
-<use href="#mdi:ghost-outline" xlink:href="#mdi:ghost-outline" x="-13" y="-13" height="26" width="26.0" class="key trans tap glyph mdi:ghost-outline"/>
+<g transform="translate(280, 40)" class="key keypos-3">
+<rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
+<text x="0" y="0" class="key tap">RCLK</text>
 </g>
 <g transform="translate(360, 40)" class="key trans keypos-4">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key trans"/>

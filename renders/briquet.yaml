@@ -63,9 +63,9 @@ layers:
   - {t: '$$mdi:ghost-outline$$', type: trans}
   RAISE:
   - {t: '$$mdi:ghost-outline$$', type: trans}
+  - LCLK
   - {t: '$$mdi:ghost-outline$$', type: trans}
-  - {t: '$$mdi:ghost-outline$$', type: trans}
-  - {t: '$$mdi:ghost-outline$$', type: trans}
+  - RCLK
   - {t: '$$mdi:ghost-outline$$', type: trans}
   - {t: '$$mdi:ghost-outline$$', type: trans}
   - {t: '1', s: '!'}
