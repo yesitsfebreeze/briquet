@@ -64,7 +64,7 @@ layers:
   RAISE:
   - {t: '$$mdi:ghost$$', type: trans}
   - '&mkp LCLK'
-  - $$mdi:mouse$$$$mdi:menu-up-outline$$
+  - $$mdi:mouse$$
   - '&mkp RCLK'
   - {t: '$$mdi:ghost$$', type: trans}
   - {t: '$$mdi:ghost$$', type: trans}
