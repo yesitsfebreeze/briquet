@@ -559,12 +559,18 @@ parse_config:
   trans_legend:
     tap: $$mdi:ghost-outline$$
     type: trans
+    
 
   raw_binding_map:
     "&ma_and": "&&"
     "&ma_or": "||"
     "&ma_pointer": "->"
     "&ma_equal": "=="
+
+    "&mmv MOVE_UP": $$mdi:mouse$$
+    "&mmv MOVE_DOWN": $$mdi:mouse$$
+    "&mmv MOVE_LEFT": $$mdi:mouse$$
+    "&mmv MOVE_RIGHT": $$mdi:mouse$$
 
   # ZMK
   zmk_keycode_map:
