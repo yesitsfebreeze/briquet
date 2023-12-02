@@ -479,7 +479,8 @@ rect.combo {
 .trans.tap,
 .ghost.tap,
 .none.tap {
-    fill: rgb(63, 63, 63);
+    fill: rgb(13, 17, 23);
+    stroke: rgb(13, 17, 23);
 }
 
 .key.held {
