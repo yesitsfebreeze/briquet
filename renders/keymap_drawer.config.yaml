@@ -557,7 +557,7 @@ parse_config:
   # mark_alternate_layer_activators: true
   sticky_label: $$mdi:gesture-tap-hold$$
   trans_legend:
-    tap: $$mdi:ghost-outline$$
+    tap: $$mdi:ghost$$
     type: trans
     
 
