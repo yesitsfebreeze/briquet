@@ -171,6 +171,24 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
         };
+
+        dot_ques: dot_ques {
+            compatible = "zmk,behavior-mod-morph";
+            label = "DOT_QUES";
+            bindings = <&kp PERIOD>, <&kp QUESTION>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+
+        com_excl: com_excl {
+            compatible = "zmk,behavior-mod-morph";
+            label = "COM_EXCL";
+            bindings = <&kp COMMA>, <&kp EXCL>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
     };
 
     macros {
@@ -221,7 +239,7 @@
             bindings = <
 &gresc     &kp HOME   &kp UP     &kp END    &lprn      &rpen        &trans    &trans                &trans              &eql_only
 &kp TAB    &kp LEFT   &kp DOWN   &kp RIGHT  &kp LSHFT  &kp LSHFT    &kp LALT  &hold_semicol LGUI 0  &hold_quot LCTRL 0  &trans
-&kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &trans     &lt 3 SPACE  &slash    &trans                &trans              &trans
+&kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &trans     &lt 3 SPACE  &slash    &com_excl             &dot_ques           &trans
             >;
 
             label = "LOWER";
@@ -229,9 +247,9 @@
 
         RAISE {
             bindings = <
-&trans  &mkp LCLK  &mmv MOVE_UP  &mkp RCLK &trans          &trans           &kp N1  &kp N2  &kp N3       &trans
+&trans  &mkp LCLK       &mmv MOVE_UP    &mkp RCLK        &trans          &trans           &kp N1  &kp N2  &kp N3       &trans
 &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp LEFT_SHIFT  &kp RIGHT_SHIFT  &kp N4  &kp N5  &kp N6       &trans
-&trans  &trans  &mkp MCLK  &trans  &lt 3 SPACE     &trans           &kp N7  &kp N8  &nine_tilde  &kp N0
+&trans  &trans          &mkp MCLK       &trans           &lt 3 SPACE     &trans           &kp N7  &kp N8  &nine_tilde  &kp N0
             >;
 
             label = "RAISE";
