@@ -24,8 +24,8 @@ layers:
   - {t: X, h: ^X}
   - {t: C, h: ^C}
   - {t: V, h: ^V}
-  - {t: '$$mdi:keyboard-space$$', h: LOWER}
   - {t: '$$mdi:keyboard-space$$', h: RAISE}
+  - {t: '$$mdi:keyboard-space$$', h: LOWER}
   - B
   - N
   - M
@@ -55,8 +55,8 @@ layers:
   - ^X
   - ^C
   - ^V
-  - {type: held}
   - {t: '$$mdi:keyboard-space$$', h: COMBO}
+  - {type: held}
   - {t: /, s: \}
   - {t: ',', s: '!'}
   - {t: ., s: '?'}
@@ -86,8 +86,8 @@ layers:
   - ''
   - MB3
   - ''
-  - {t: '$$mdi:keyboard-space$$', h: COMBO}
   - {type: held}
+  - {t: '$$mdi:keyboard-space$$', h: COMBO}
   - {t: '7', s: '&'}
   - {t: '8', s: '*'}
   - {t: '9', s: '~'}
