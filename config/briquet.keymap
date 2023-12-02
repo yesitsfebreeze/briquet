@@ -154,15 +154,6 @@
             flavor = "tap-preferred";
         };
 
-        eql_only: eql_only {
-            compatible = "zmk,behavior-mod-morph";
-            label = "EQL_ONLY";
-            bindings = <&kp EQUAL>, <&kp KP_EQUAL>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT)>;
-        };
-
         or: or {
             compatible = "zmk,behavior-mod-morph";
             label = "OR";
@@ -247,7 +238,7 @@
 
         LOWER {
             bindings = <
-&gresc     &kp HOME   &kp UP     &kp END    &lbrkt       &rbrkt  &none     &none                 &none               &eql_only
+&gresc     &kp HOME   &kp UP     &kp END    &lbrkt       &rbrkt  &none     &none                 &none               &kp EQUAL
 &kp TAB    &kp LEFT   &kp DOWN   &kp RIGHT  &lprn        &rpen   &kp LALT  &hold_semicol LGUI 0  &hold_quot LCTRL 0  &hold_ent_bsp LEFT_SHIFT 0
 &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &lt 3 SPACE  &none   &slash    &com_excl             &dot_ques           &kp MINUS
             >;
