@@ -84,7 +84,7 @@ layers:
   - {t: '$$mdi:ghost-outline$$', type: trans}
   - {t: '$$mdi:ghost-outline$$', type: trans}
   - {t: '$$mdi:ghost-outline$$', type: trans}
-  - MCLK
+  - '&mkp MCLK'
   - {t: '$$mdi:ghost-outline$$', type: trans}
   - {t: '$$mdi:keyboard-space$$', h: COMBO}
   - {type: held}
