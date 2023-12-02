@@ -10,12 +10,12 @@ layers:
   - I
   - O
   - P
-  - A
+  - {t: A, h: '$$mdi:arrow-up-bold$$'}
   - {t: S, h: '$$mdi:apple-keyboard-control$$'}
   - {t: D, h: '$$mdi:microsoft-windows$$'}
   - {t: F, h: '$$mdi:apple-keyboard-option$$'}
-  - {t: G, h: '$$mdi:arrow-up-bold$$'}
-  - {t: H, h: '$$mdi:arrow-up-bold$$'}
+  - G
+  - H
   - {t: J, h: '$$mdi:apple-keyboard-option$$'}
   - {t: K, h: '$$mdi:microsoft-windows$$'}
   - {t: L, h: '$$mdi:apple-keyboard-control$$'}

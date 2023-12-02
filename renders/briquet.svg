@@ -612,6 +612,7 @@ rect.key.ghost {
 <g transform="translate(40, 120)" class="key keypos-10">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
 <text x="0" y="0" class="key tap">A</text>
+<use href="#mdi:arrow-up-bold" xlink:href="#mdi:arrow-up-bold" x="-9" y="16" height="18" width="18.0" class="key hold glyph mdi:arrow-up-bold"/>
 </g>
 <g transform="translate(120, 120)" class="key keypos-11">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
@@ -631,12 +632,10 @@ rect.key.ghost {
 <g transform="translate(360, 120)" class="key keypos-14">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
 <text x="0" y="0" class="key tap">G</text>
-<use href="#mdi:arrow-up-bold" xlink:href="#mdi:arrow-up-bold" x="-9" y="16" height="18" width="18.0" class="key hold glyph mdi:arrow-up-bold"/>
 </g>
 <g transform="translate(480, 120)" class="key keypos-15">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
 <text x="0" y="0" class="key tap">H</text>
-<use href="#mdi:arrow-up-bold" xlink:href="#mdi:arrow-up-bold" x="-9" y="16" height="18" width="18.0" class="key hold glyph mdi:arrow-up-bold"/>
 </g>
 <g transform="translate(560, 120)" class="key keypos-16">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
