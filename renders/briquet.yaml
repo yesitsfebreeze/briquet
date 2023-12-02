@@ -94,9 +94,9 @@ layers:
   - {t: '0', s: )}
   COMBO:
   - {t: '$$mdi:ghost-outline$$', type: trans}
-  - {t: '&', s: '&ma_and'}
+  - {t: '&', s: '&&'}
   - {t: '|', s: '||'}
-  - '&ma_pointer'
+  - ->
   - {t: '[', s: <}
   - {t: ']', s: '>'}
   - F1
@@ -105,7 +105,7 @@ layers:
   - {t: '$$mdi:ghost-outline$$', type: trans}
   - {t: '$$mdi:ghost-outline$$', type: trans}
   - {t: '$$mdi:ghost-outline$$', type: trans}
-  - '&ma_equal'
+  - ==
   - {t: '$$mdi:ghost-outline$$', type: trans}
   - $$mdi:arrow-up-bold-box-outline$$
   - $$mdi:arrow-up-bold-box-outline$$
