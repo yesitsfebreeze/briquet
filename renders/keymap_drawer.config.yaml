@@ -491,7 +491,7 @@ draw_config:
     .shifted {
         dominant-baseline: hanging;
         fill: var(--color--key--text--shifted);
-        translate: -15px 2px;
+        translate: -25px 2px;
     }
     .hold {
         dominant-baseline: ideographic;
