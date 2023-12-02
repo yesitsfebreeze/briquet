@@ -545,8 +545,8 @@ path.combo {
 rect.key.trans,
 rect.key.none,
 rect.key.ghost {
-  fill: rgb(13, 17, 23);
-  stroke: rgb(13, 17, 23);
+  fill: transparent;
+  stroke: transparent;
 }
 
 
