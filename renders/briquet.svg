@@ -703,7 +703,6 @@ rect.key.ghost {
 <g transform="translate(800, 200)" class="key keypos-29">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
 <text x="0" y="0" class="key tap">_</text>
-<use href="#mdi:apple-keyboard-control" xlink:href="#mdi:apple-keyboard-control" x="-9" y="16" height="18" width="18.0" class="key hold glyph mdi:apple-keyboard-control"/>
 </g>
 </g>
 </g>

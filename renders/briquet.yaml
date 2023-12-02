@@ -29,7 +29,7 @@ layers:
   - B
   - N
   - M
-  - {t: _, h: '$$mdi:apple-keyboard-control$$'}
+  - _
   LOWER:
   - {t: '$$mdi:keyboard-esc$$', s: '`'}
   - $$mdi:ray-end-arrow$$
