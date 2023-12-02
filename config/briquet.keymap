@@ -247,9 +247,9 @@
 
         RAISE {
             bindings = <
-&trans  &mkp LCLK       &mmv MOVE_UP    &mkp RCLK        &trans          &trans           &kp N1  &kp N2  &kp N3       &trans
-&trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp LEFT_SHIFT  &kp RIGHT_SHIFT  &kp N4  &kp N5  &kp N6       &trans
-&trans  &trans          &mkp MCLK       &trans           &lt 3 SPACE     &trans           &kp N7  &kp N8  &nine_tilde  &kp N0
+&gresc   &mkp LCLK       &mmv MOVE_UP    &mkp RCLK        &trans          &trans           &kp N1  &kp N2  &kp N3       &trans
+&kp TAB  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp LEFT_SHIFT  &kp RIGHT_SHIFT  &kp N4  &kp N5  &kp N6       &trans
+&trans   &trans          &mkp MCLK       &trans           &lt 3 SPACE     &trans           &kp N7  &kp N8  &nine_tilde  &kp N0
             >;
 
             label = "RAISE";
