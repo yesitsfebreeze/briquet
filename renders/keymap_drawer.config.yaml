@@ -567,7 +567,7 @@ parse_config:
     "&ma_pointer": "->"
     "&ma_equal": "=="
 
-    "&mmv MOVE_UP": $$mdi:mouse$$$$mdi:menu-up-outline$$
+    "&mmv MOVE_UP": $$mdi:mouse$$
     "&mmv MOVE_DOWN": $$mdi:mouse$$
     "&mmv MOVE_LEFT": $$mdi:mouse$$
     "&mmv MOVE_RIGHT": $$mdi:mouse$$
