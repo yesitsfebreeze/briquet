@@ -559,6 +559,9 @@ parse_config:
     tap: $$mdi:ghost-outline$$
     type: trans
 
+  raw_binding_map:
+    &ma_or: "||"
+
   # ZMK
   zmk_keycode_map:
     # Symbols
