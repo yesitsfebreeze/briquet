@@ -498,6 +498,7 @@ rect.combo {
 .shifted {
     dominant-baseline: hanging;
     fill: var(--color--key--text--shifted);
+    translate: -25px 2px;
 }
 .hold {
     dominant-baseline: ideographic;
