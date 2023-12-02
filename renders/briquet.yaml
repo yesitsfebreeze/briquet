@@ -14,8 +14,8 @@ layers:
   - {t: S, h: '$$mdi:apple-keyboard-control$$'}
   - {t: D, h: '$$mdi:microsoft-windows$$'}
   - {t: F, h: '$$mdi:apple-keyboard-option$$'}
-  - {t: G, h: '$$mdi:arrow-up-bold-box-outline$$'}
-  - {t: H, h: '$$mdi:arrow-up-bold-box-outline$$'}
+  - {t: G, h: '$$mdi:arrow-up-bold$$'}
+  - {t: H, h: '$$mdi:arrow-up-bold$$'}
   - {t: J, h: '$$mdi:apple-keyboard-option$$'}
   - {t: K, h: '$$mdi:microsoft-windows$$'}
   - {t: L, h: '$$mdi:apple-keyboard-control$$'}
@@ -45,8 +45,8 @@ layers:
   - $$mdi:menu-left-outline$$
   - $$mdi:menu-down-outline$$
   - $$mdi:menu-right-outline$$
-  - $$mdi:arrow-up-bold-box-outline$$
-  - $$mdi:arrow-up-bold-box-outline$$
+  - $$mdi:arrow-up-bold$$
+  - $$mdi:arrow-up-bold$$
   - $$mdi:apple-keyboard-option$$
   - {t: ;, h: '$$mdi:microsoft-windows$$', s: ':'}
   - {t: '"', h: '$$mdi:apple-keyboard-control$$', s: ''''}
@@ -76,8 +76,8 @@ layers:
   - '&mmv MOVE_LEFT'
   - '&mmv MOVE_DOWN'
   - '&mmv MOVE_RIGHT'
-  - $$mdi:arrow-up-bold-box-outline$$
-  - $$mdi:arrow-up-bold-box-outline$$
+  - $$mdi:arrow-up-bold$$
+  - $$mdi:arrow-up-bold$$
   - {t: '4', s: $}
   - {t: '5', s: '%'}
   - {t: '6', s: ^}
@@ -107,8 +107,8 @@ layers:
   - {t: '$$mdi:ghost-outline$$', type: trans}
   - ==
   - {t: '$$mdi:ghost-outline$$', type: trans}
-  - $$mdi:arrow-up-bold-box-outline$$
-  - $$mdi:arrow-up-bold-box-outline$$
+  - $$mdi:arrow-up-bold$$
+  - $$mdi:arrow-up-bold$$
   - F4
   - F5
   - F6
