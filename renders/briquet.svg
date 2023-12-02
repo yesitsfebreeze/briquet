@@ -828,7 +828,7 @@ path.combo {
 </g>
 <g transform="translate(720, 200)" class="key keypos-28">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
-<text x="0" y="0" class="key tap">PERIOD</text>
+<text x="0" y="0" class="key tap">.</text>
 <text x="0" y="-34" class="key shifted">?</text>
 </g>
 <g transform="translate(800, 200)" class="key trans keypos-29">
