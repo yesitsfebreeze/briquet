@@ -577,9 +577,7 @@ parse_config:
     "&mkp RCLK": "MB2"
     "&mkp MCLK": "MB3"
 
-    1: $$mdi:layer-minus$$
-    2: $$mdi:layer-plus$$
-    3: $$mdi:layers$$
+    
 
   # ZMK
   zmk_keycode_map:
@@ -686,7 +684,10 @@ parse_config:
     HOME: $$mdi:ray-end-arrow$$
     END: $$mdi:ray-start-arrow$$
     KP_EQUAL: ""
-    MA_OR: "||"
+
+    1: $$mdi:layer-minus$$
+    2: $$mdi:layer-plus$$
+    3: $$mdi:layers$$
 
     # Numbers
     N1:
