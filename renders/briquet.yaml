@@ -58,8 +58,8 @@ layers:
   - {type: held}
   - {t: '$$mdi:keyboard-space$$', h: COMBO}
   - {t: /, s: \}
-  - {t: '$$mdi:ghost-outline$$', type: trans}
-  - {t: '$$mdi:ghost-outline$$', type: trans}
+  - {t: ',', s: '!'}
+  - {t: PERIOD, s: '?'}
   - {t: '$$mdi:ghost-outline$$', type: trans}
   RAISE:
   - {t: '$$mdi:ghost-outline$$', type: trans}
