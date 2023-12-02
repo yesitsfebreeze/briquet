@@ -560,7 +560,10 @@ parse_config:
     type: trans
 
   raw_binding_map:
+    "&ma_and": "&&"
     "&ma_or": "||"
+    "&ma_pointer": "->"
+    "&ma_equal": "=="
 
   # ZMK
   zmk_keycode_map:
