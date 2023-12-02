@@ -473,6 +473,7 @@ draw_config:
     .ghost.tap,
     .none.tap {
         fill: white;
+        opacity: 0.5;
     }
 
     .key.held {
@@ -538,7 +539,6 @@ draw_config:
     rect.key.ghost {
       fill: transparent;
       stroke: transparent;
-      opacity: 0.5;
     }
 
 
