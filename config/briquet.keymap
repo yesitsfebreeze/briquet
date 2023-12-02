@@ -189,6 +189,16 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
         };
+
+        hold_ent_bsp: hold_ent_sft {
+            compatible = "zmk,behavior-hold-tap";
+            label = "Hold&Enter";
+            bindings = <&kp>, <&entbsp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <170>;
+            flavor = "tap-preferred";
+        };
     };
 
     macros {
