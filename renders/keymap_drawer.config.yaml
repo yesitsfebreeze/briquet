@@ -472,7 +472,7 @@ draw_config:
     .trans.tap,
     .ghost.tap,
     .none.tap {
-        fill: rgb(1, 1, 1);
+        fill: white;
     }
 
     .key.held {
