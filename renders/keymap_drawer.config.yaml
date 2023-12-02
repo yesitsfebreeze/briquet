@@ -571,6 +571,9 @@ parse_config:
     "&mmv MOVE_DOWN": $$mdi:mouse$$
     "&mmv MOVE_LEFT": $$mdi:mouse$$
     "&mmv MOVE_RIGHT": $$mdi:mouse$$
+    "&mkp LCLK": "MB1"
+    "&mkp RCLK": "MB2"
+    "&mkp MCLK": "MB3"
 
   # ZMK
   zmk_keycode_map:
