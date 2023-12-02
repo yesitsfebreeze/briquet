@@ -281,11 +281,6 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 180 0))
     )
-    (model ":KICAD7_3DMODEL_DIR:Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x02_P2.54mm_Vertical.step"
-      (offset (xyz 7.63 -10.4 -1.6))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 180 0))
-    )
   )
 
   (footprint "Briquet:Mount" (layer "F.Cu")
@@ -1671,7 +1666,7 @@
       (net 41 "BAT_IN") (pinfunction "Pin_1") (pintype "passive") (tstamp 7c0bcf7f-4bf3-4b96-92df-3a84c37952fe))
     (pad "2" thru_hole circle (at 0 2.54 270) (size 1.6 1.6) (drill 1.1) (layers "*.Cu" "*.Mask")
       (net 1 "GND") (pinfunction "Pin_2") (pintype "passive") (tstamp 5d5bcd2c-0dd2-4343-bf6a-693383e47eaa))
-    (model ":KICAD7_3DMODEL_DIR:Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x02_P2.54mm_Vertical.step" hide
+    (model ":KICAD7_3DMODEL_DIR:Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x02_P2.54mm_Vertical.step"
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 180))

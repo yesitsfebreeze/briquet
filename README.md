@@ -7,7 +7,8 @@ You can clone this repository and authorize it on:
 https://nickcoutsos.github.io/keymap-editor/  
 Once u save the firmware and keymap render will automatically be built for you.  
 
-# PCB Renders
+# Renders
+![keymap](./renders/full.png)
 ![keymap](./renders/top.png)
 ![keymap](./renders/bottom.png)
 
