@@ -663,7 +663,7 @@ parse_config:
     HOME: $$mdi:ray-end-arrow$$
     END: $$mdi:ray-start-arrow$$
     KP_EQUAL: ""
-    ma_and: "&&"
+    MA_OR: "||"
 
     # Numbers
     N1:
