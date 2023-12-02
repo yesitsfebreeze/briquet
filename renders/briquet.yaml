@@ -19,7 +19,7 @@ layers:
   - {t: J, h: '$$mdi:apple-keyboard-option$$'}
   - {t: K, h: '$$mdi:microsoft-windows$$'}
   - {t: L, h: '$$mdi:apple-keyboard-control$$'}
-  - {t: '$$mdi:keyboard-return$$', s: '$$mdi:backspace$$'}
+  - {t: '$$mdi:keyboard-return$$', h: '$$mdi:arrow-up-bold$$', s: '$$mdi:backspace$$'}
   - {t: Z, h: ^Z}
   - {t: X, h: ^X}
   - {t: C, h: ^C}
