@@ -50,7 +50,7 @@ layers:
   - $$mdi:apple-keyboard-option$$
   - {t: ;, h: '$$mdi:microsoft-windows$$', s: ':'}
   - {t: '"', h: '$$mdi:apple-keyboard-control$$', s: ''''}
-  - {t: '$$mdi:ghost$$', type: trans}
+  - {t: '$$mdi:keyboard-return$$', h: '$$mdi:arrow-up-bold$$', s: '$$mdi:backspace$$'}
   - ^Z
   - ^X
   - ^C
@@ -81,7 +81,7 @@ layers:
   - {t: '4', s: $}
   - {t: '5', s: '%'}
   - {t: '6', s: ^}
-  - {t: '$$mdi:ghost$$', type: trans}
+  - {t: '$$mdi:keyboard-return$$', h: '$$mdi:arrow-up-bold$$', s: '$$mdi:backspace$$'}
   - {t: '$$mdi:ghost$$', type: trans}
   - {t: '$$mdi:ghost$$', type: trans}
   - MB3
@@ -112,7 +112,7 @@ layers:
   - F4
   - F5
   - F6
-  - {t: '$$mdi:ghost$$', type: trans}
+  - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:ghost$$', type: trans}
   - {t: '$$mdi:ghost$$', type: trans}
   - {t: '$$mdi:ghost$$', type: trans}
