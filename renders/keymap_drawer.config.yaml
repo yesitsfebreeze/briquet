@@ -633,6 +633,7 @@ parse_config:
     APOS: .
     DOUBLE_QUOTES: '"'
     DQT: '"'
+    PERIOD: .
 
     LESS_THAN: <
     LT: <
