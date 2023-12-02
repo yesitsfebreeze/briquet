@@ -849,9 +849,7 @@ rect.key.ghost {
 </g>
 <g transform="translate(120, 40)" class="key keypos-1">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
-<text x="0" y="0" class="key tap">
-<tspan x="0" dy="-0.5em">&amp;mkp</tspan><tspan x="0" dy="1.0em">LCLK</tspan>
-</text>
+<text x="0" y="0" class="key tap">MB1</text>
 </g>
 <g transform="translate(200, 40)" class="key keypos-2">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
@@ -859,9 +857,7 @@ rect.key.ghost {
 </g>
 <g transform="translate(280, 40)" class="key keypos-3">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
-<text x="0" y="0" class="key tap">
-<tspan x="0" dy="-0.5em">&amp;mkp</tspan><tspan x="0" dy="1.0em">RCLK</tspan>
-</text>
+<text x="0" y="0" class="key tap">MB2</text>
 </g>
 <g transform="translate(360, 40)" class="key trans keypos-4">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key trans"/>
@@ -943,9 +939,7 @@ rect.key.ghost {
 </g>
 <g transform="translate(200, 200)" class="key keypos-22">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
-<text x="0" y="0" class="key tap">
-<tspan x="0" dy="-0.5em">&amp;mkp</tspan><tspan x="0" dy="1.0em">MCLK</tspan>
-</text>
+<text x="0" y="0" class="key tap">MB3</text>
 </g>
 <g transform="translate(280, 200)" class="key trans keypos-23">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key trans"/>

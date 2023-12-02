@@ -63,9 +63,9 @@ layers:
   - {t: '$$mdi:ghost$$', type: trans}
   RAISE:
   - {t: '$$mdi:ghost$$', type: trans}
-  - '&mkp LCLK'
+  - MB1
   - $$mdi:mouse$$
-  - '&mkp RCLK'
+  - MB2
   - {t: '$$mdi:ghost$$', type: trans}
   - {t: '$$mdi:ghost$$', type: trans}
   - {t: '1', s: '!'}
@@ -84,7 +84,7 @@ layers:
   - {t: '$$mdi:ghost$$', type: trans}
   - {t: '$$mdi:ghost$$', type: trans}
   - {t: '$$mdi:ghost$$', type: trans}
-  - '&mkp MCLK'
+  - MB3
   - {t: '$$mdi:ghost$$', type: trans}
   - {t: '$$mdi:keyboard-space$$', h: COMBO}
   - {type: held}
