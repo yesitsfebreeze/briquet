@@ -472,8 +472,7 @@ draw_config:
     .trans.tap,
     .ghost.tap,
     .none.tap {
-        fill: rgb(13, 17, 23);
-        stroke: rgb(13, 17, 23);
+        fill: rgb(63, 63, 63);
     }
 
     .key.held {
@@ -535,7 +534,8 @@ draw_config:
     .trans,
     .none,
     .ghost {
-      opacity: 0.9;
+      fill: rgb(13, 17, 23);
+      stroke: rgb(13, 17, 23);
     }
 
 
