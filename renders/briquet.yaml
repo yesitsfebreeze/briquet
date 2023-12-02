@@ -60,7 +60,7 @@ layers:
   - {t: /, s: \}
   - {t: ',', s: '!'}
   - {t: ., s: '?'}
-  - ''
+  - {t: '-', s: _}
   RAISE:
   - {t: '$$mdi:keyboard-esc$$', s: '`'}
   - MB1
