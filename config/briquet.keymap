@@ -247,9 +247,9 @@
 
         LOWER {
             bindings = <
-&gresc     &kp HOME   &kp UP     &kp END    &lprn      &rpen        &trans    &trans                &trans              &eql_only
-&kp TAB    &kp LEFT   &kp DOWN   &kp RIGHT  &kp LSHFT  &kp LSHFT    &kp LALT  &hold_semicol LGUI 0  &hold_quot LCTRL 0  &hold_ent_bsp LEFT_SHIFT 0
-&kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &trans     &lt 3 SPACE  &slash    &com_excl             &dot_ques           &trans
+&gresc     &kp HOME   &kp UP     &kp END    &lbrkt     &rbrkt       &none    &none                &none              &eql_only
+&kp TAB    &kp LEFT   &kp DOWN   &kp RIGHT  &lprn      &rpen        &kp LALT  &hold_semicol LGUI 0  &hold_quot LCTRL 0  &hold_ent_bsp LEFT_SHIFT 0
+&kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &none     &lt 3 SPACE  &slash    &com_excl             &dot_ques           &none
             >;
 
             label = "LOWER";
@@ -257,9 +257,9 @@
 
         RAISE {
             bindings = <
-&gresc   &mkp LCLK       &mmv MOVE_UP    &mkp RCLK        &trans          &trans           &kp N1  &kp N2  &kp N3       &trans
+&gresc   &mkp LCLK       &mmv MOVE_UP    &mkp RCLK        &none          &none           &kp N1  &kp N2  &kp N3       &none
 &kp TAB  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp LEFT_SHIFT  &kp RIGHT_SHIFT  &kp N4  &kp N5  &kp N6       &hold_ent_bsp LEFT_SHIFT 0
-&trans   &trans          &mkp MCLK       &trans           &lt 3 SPACE     &trans           &kp N7  &kp N8  &nine_tilde  &kp N0
+&none   &none          &mkp MCLK       &none           &lt 3 SPACE     &none           &kp N7  &kp N8  &nine_tilde  &kp N0
             >;
 
             label = "RAISE";
@@ -267,9 +267,9 @@
 
         COMBO {
             bindings = <
-&trans  &and    &or        &ma_pointer  &lbrkt     &rbrkt     &kp F1  &kp F2  &kp F3  &trans
-&trans  &trans  &ma_equal  &trans       &kp LSHFT  &kp LSHFT  &kp F4  &kp F5  &kp F6  &kp ENTER
-&trans  &trans  &trans     &trans       &trans     &trans     &kp F7  &kp F8  &kp F9  &trans
+&none  &and    &or        &ma_pointer  &none     &none     &kp F1  &kp F2  &kp F3  &none
+&none  &none  &ma_equal  &none       &none     &none  &kp F4  &kp F5  &kp F6  &kp ENTER
+&none  &none  &none     &none       &none     &none     &kp F7  &kp F8  &kp F9  &none
             >;
 
             label = "COMBO";
