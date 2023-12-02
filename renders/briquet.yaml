@@ -62,7 +62,7 @@ layers:
   - {t: ., s: '?'}
   - {t: '$$mdi:ghost$$', type: trans}
   RAISE:
-  - {t: '$$mdi:ghost$$', type: trans}
+  - {t: '$$mdi:keyboard-esc$$', s: '`'}
   - MB1
   - $$mdi:mouse$$
   - MB2
@@ -72,7 +72,7 @@ layers:
   - {t: '2', s: '@'}
   - {t: '3', s: '#'}
   - {t: '$$mdi:ghost$$', type: trans}
-  - {t: '$$mdi:ghost$$', type: trans}
+  - $$mdi:keyboard-tab$$
   - $$mdi:mouse$$
   - $$mdi:mouse$$
   - $$mdi:mouse$$
