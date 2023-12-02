@@ -577,7 +577,9 @@ parse_config:
     "&mkp RCLK": "MB2"
     "&mkp MCLK": "MB3"
 
-    "COMBO": "test"
+    1: $$mdi:layer-minus$$
+    2: $$mdi:layer-plus$$
+    3: $$mdi:layers$$
 
   # ZMK
   zmk_keycode_map:
@@ -794,9 +796,7 @@ parse_config:
     BT_CLR: $$mdi:bluetooth-off$$
     BT_SEL: $$mdi:bluetooth-connect$$
 
-    RAISE: $$mdi:layer-plus$$
-    LOWER: $$mdi:layer-minus$$
-    COMBO: $$mdi:layers$$
+    
 
     # Settings
     C_BRI_UP: $$mdi:brightness-5$$
