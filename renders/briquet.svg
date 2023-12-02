@@ -488,6 +488,7 @@ rect.combo {
 .key.held {
     fill: #FF6961;
     stroke: #FF6961;
+    opacity: 0.5;
 }
 
 .tap {
