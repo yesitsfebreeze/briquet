@@ -483,6 +483,7 @@ rect.combo {
 .ghost.tap,
 .none.tap {
     fill: white;
+    opacity: 0.5;
 }
 
 .key.held {
@@ -548,7 +549,6 @@ rect.key.none,
 rect.key.ghost {
   fill: transparent;
   stroke: transparent;
-  opacity: 0.5;
 }
 
 
