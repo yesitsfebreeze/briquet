@@ -1,0 +1,125 @@
+layers:
+  BASE:
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - {t: Y, h: ^Y}
+  - U
+  - I
+  - O
+  - P
+  - A
+  - {t: S, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: D, h: '$$mdi:microsoft-windows$$'}
+  - {t: F, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: G, h: '$$mdi:arrow-up-bold-box-outline$$'}
+  - {t: H, h: '$$mdi:arrow-up-bold-box-outline$$'}
+  - {t: J, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: K, h: '$$mdi:microsoft-windows$$'}
+  - {t: L, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: '$$mdi:keyboard-return$$', s: '$$mdi:backspace$$'}
+  - {t: Z, h: ^Z}
+  - {t: X, h: ^X}
+  - {t: C, h: ^C}
+  - {t: V, h: ^V}
+  - {t: '$$mdi:keyboard-space$$', h: LOWER}
+  - {t: '$$mdi:keyboard-space$$', h: RAISE}
+  - B
+  - N
+  - M
+  - {t: _, h: '$$mdi:apple-keyboard-control$$'}
+  LOWER:
+  - {t: '$$mdi:keyboard-esc$$', s: '`'}
+  - $$mdi:ray-end-arrow$$
+  - $$mdi:menu-up-outline$$
+  - $$mdi:ray-start-arrow$$
+  - {t: (, s: '{'}
+  - {t: ), s: '}'}
+  - {t: '$$mdi:ghost-outline$$', type: trans}
+  - {t: '$$mdi:ghost-outline$$', type: trans}
+  - {t: '$$mdi:ghost-outline$$', type: trans}
+  - '='
+  - $$mdi:keyboard-tab$$
+  - $$mdi:menu-left-outline$$
+  - $$mdi:menu-down-outline$$
+  - $$mdi:menu-right-outline$$
+  - $$mdi:arrow-up-bold-box-outline$$
+  - $$mdi:arrow-up-bold-box-outline$$
+  - $$mdi:apple-keyboard-option$$
+  - {t: ;, h: '$$mdi:microsoft-windows$$', s: ':'}
+  - {t: '"', h: '$$mdi:apple-keyboard-control$$', s: ''''}
+  - {t: '$$mdi:ghost-outline$$', type: trans}
+  - ^Z
+  - ^X
+  - ^C
+  - ^V
+  - {type: held}
+  - {t: '$$mdi:keyboard-space$$', h: COMBO}
+  - {t: /, s: \}
+  - {t: '$$mdi:ghost-outline$$', type: trans}
+  - {t: '$$mdi:ghost-outline$$', type: trans}
+  - {t: '$$mdi:ghost-outline$$', type: trans}
+  RAISE:
+  - {t: '$$mdi:ghost-outline$$', type: trans}
+  - '&mkp LCLK'
+  - '&mmv MOVE_UP'
+  - '&mkp RCLK'
+  - {t: '$$mdi:ghost-outline$$', type: trans}
+  - {t: '$$mdi:ghost-outline$$', type: trans}
+  - {t: '1', s: '!'}
+  - {t: '2', s: '@'}
+  - {t: '3', s: '#'}
+  - {t: '$$mdi:ghost-outline$$', type: trans}
+  - {t: '$$mdi:ghost-outline$$', type: trans}
+  - '&mmv MOVE_LEFT'
+  - '&mmv MOVE_DOWN'
+  - '&mmv MOVE_RIGHT'
+  - $$mdi:arrow-up-bold-box-outline$$
+  - $$mdi:arrow-up-bold-box-outline$$
+  - {t: '4', s: $}
+  - {t: '5', s: '%'}
+  - {t: '6', s: ^}
+  - {t: '$$mdi:ghost-outline$$', type: trans}
+  - {t: '$$mdi:ghost-outline$$', type: trans}
+  - {t: '$$mdi:ghost-outline$$', type: trans}
+  - '&mkp MCLK'
+  - {t: '$$mdi:ghost-outline$$', type: trans}
+  - {t: '$$mdi:keyboard-space$$', h: COMBO}
+  - {type: held}
+  - {t: '7', s: '&'}
+  - {t: '8', s: '*'}
+  - {t: '9', s: '~'}
+  - {t: '0', s: )}
+  COMBO:
+  - {t: '$$mdi:ghost-outline$$', type: trans}
+  - {t: '&', s: '&ma_and'}
+  - {t: '|', s: '||'}
+  - '&ma_pointer'
+  - {t: '[', s: <}
+  - {t: ']', s: '>'}
+  - F1
+  - F2
+  - F3
+  - {t: '$$mdi:ghost-outline$$', type: trans}
+  - {t: '$$mdi:ghost-outline$$', type: trans}
+  - {t: '$$mdi:ghost-outline$$', type: trans}
+  - '&ma_equal'
+  - {t: '$$mdi:ghost-outline$$', type: trans}
+  - $$mdi:arrow-up-bold-box-outline$$
+  - $$mdi:arrow-up-bold-box-outline$$
+  - F4
+  - F5
+  - F6
+  - {t: '$$mdi:ghost-outline$$', type: trans}
+  - {t: '$$mdi:ghost-outline$$', type: trans}
+  - {t: '$$mdi:ghost-outline$$', type: trans}
+  - {t: '$$mdi:ghost-outline$$', type: trans}
+  - {t: '$$mdi:ghost-outline$$', type: trans}
+  - {type: held}
+  - {type: held}
+  - F7
+  - F8
+  - F9
+  - {t: '$$mdi:ghost-outline$$', type: trans}
