@@ -577,6 +577,8 @@ parse_config:
     "&mkp RCLK": "MB2"
     "&mkp MCLK": "MB3"
 
+    "COMBO": "test"
+
   # ZMK
   zmk_keycode_map:
     # Symbols
