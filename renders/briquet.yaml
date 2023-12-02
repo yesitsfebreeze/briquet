@@ -76,8 +76,8 @@ layers:
   - $$mdi:mouse$$
   - $$mdi:mouse$$
   - $$mdi:mouse$$
-  - {t: '$$mdi:ghost$$', type: trans}
-  - {t: '$$mdi:ghost$$', type: trans}
+  - ''
+  - ''
   - {t: '4', s: $}
   - {t: '5', s: '%'}
   - {t: '6', s: ^}
