@@ -229,7 +229,7 @@
 
         RAISE {
             bindings = <
-&trans  &trans  &trans  &trans  &trans          &trans           &kp N1  &kp N2  &kp N3       &trans
+&trans  &kp LCLK  &trans  &kp RCLK  &trans          &trans           &kp N1  &kp N2  &kp N3       &trans
 &trans  &trans  &trans  &trans  &kp LEFT_SHIFT  &kp RIGHT_SHIFT  &kp N4  &kp N5  &kp N6       &trans
 &trans  &trans  &trans  &trans  &lt 3 SPACE     &trans           &kp N7  &kp N8  &nine_tilde  &kp N0
             >;
