@@ -78,9 +78,9 @@ layers:
   - $$mdi:mouse$$
   - ''
   - ''
-  - {t: '4', s: $}
-  - {t: '5', s: '%'}
-  - {t: '6', s: ^}
+  - {t: '4', h: '$$mdi:apple-keyboard-option$$'}
+  - {t: '5', h: '$$mdi:microsoft-windows$$', s: '%'}
+  - {t: '6', h: '$$mdi:apple-keyboard-control$$'}
   - {t: '$$mdi:keyboard-return$$', h: '$$mdi:arrow-up-bold$$', s: '$$mdi:backspace$$'}
   - ''
   - $$mdi:mouse-move-up$$
