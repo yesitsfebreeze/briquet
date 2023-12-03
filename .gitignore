@@ -1,3 +1,5 @@
 .DS_Store
 
 pcb/*-backups
+pcb/*autosave-*
+pcb/*.lck
