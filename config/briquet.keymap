@@ -16,21 +16,20 @@
     continue-list = <UNDERSCORE BACKSPACE DELETE MINUS>;
 };
 
-
 #define MOUSE_SCROLL_MAX 100
 
 #undef SCROLL_UP
 #undef SCROLL_DOWN
+
 #define SCROLL_UP SCROLL_VERT(MOUSE_SCROLL_MAX)
 #define SCROLL_DOWN SCROLL_VERT(-MOUSE_SCROLL_MAX)
-
 
 &mwh {
     time-to-max-speed-ms = <1000>;
 };
 
-
 /* Layers */
+
 #define BASE 0
 #define LOWER 1
 #define RAISE 2
@@ -270,9 +269,9 @@
 
         RAISE {
             bindings = <
-&gresc   &mkp LCLK       &mmv MOVE_UP    &mkp RCLK        &none  &none        &kp N1  &kp N2  &kp N3       &none
-&kp TAB  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none  &none        &kp N4  &kp N5  &kp N6       &hold_ent_bsp LEFT_SHIFT 0
-&none    &mouse_wheel SCROLL_UP           &mkp MCLK       &mouse_wheel SCROLL_DOWN            &none  &lt 3 SPACE  &kp N7  &kp N8  &nine_tilde  &kp N0
+&gresc   &mkp LCLK               &mmv MOVE_UP    &mkp RCLK                 &none  &none        &kp N1             &kp N2       &kp N3              &none
+&kp TAB  &mmv MOVE_LEFT          &mmv MOVE_DOWN  &mmv MOVE_RIGHT           &none  &none        &ht LALT NUMBER_4  &ht RGUI N5  &ht RCTRL NUMBER_6  &hold_ent_bsp LEFT_SHIFT 0
+&none    &mouse_wheel SCROLL_UP  &mkp MCLK       &mouse_wheel SCROLL_DOWN  &none  &lt 3 SPACE  &kp N7             &kp N8       &nine_tilde         &kp N0
             >;
 
             label = "RAISE";
