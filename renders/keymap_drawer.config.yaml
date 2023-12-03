@@ -408,7 +408,7 @@ draw_config:
         --color--bg: transparent;
         --color--text: rgb(244, 244, 244);
 
-        --color--layer--text: var(--color--material--blue-gray--400);
+        --color--layer--text: white;
 
         --color--key--bg: rgb(1, 1, 1);
         --color--key--border: rgb(1, 1, 1);
