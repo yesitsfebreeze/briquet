@@ -937,6 +937,9 @@ rect.key.ghost {
 </g>
 <g transform="translate(120, 200)" class="key keypos-21">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
+<text x="0" y="0" class="key tap">
+<tspan x="0" dy="-0.5em" style="font-size: 60%">&amp;mouse_wheel</tspan><tspan x="0" dy="1.0em" style="font-size: 60%">SCROLL_VERT(100)</tspan>
+</text>
 </g>
 <g transform="translate(200, 200)" class="key keypos-22">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
@@ -944,6 +947,9 @@ rect.key.ghost {
 </g>
 <g transform="translate(280, 200)" class="key keypos-23">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
+<text x="0" y="0" class="key tap">
+<tspan x="0" dy="-0.5em" style="font-size: 60%">&amp;mouse_wheel</tspan><tspan x="0" dy="1.0em" style="font-size: 60%">SCROLL_VERT(-100)</tspan>
+</text>
 </g>
 <g transform="translate(360, 200)" class="key held keypos-24">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key held"/>

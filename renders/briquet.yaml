@@ -83,9 +83,9 @@ layers:
   - {t: '6', s: ^}
   - {t: '$$mdi:keyboard-return$$', h: '$$mdi:arrow-up-bold$$', s: '$$mdi:backspace$$'}
   - ''
-  - ''
+  - '&mouse_wheel SCROLL_VERT(100)'
   - MB3
-  - ''
+  - '&mouse_wheel SCROLL_VERT(-100)'
   - {type: held}
   - {t: '$$mdi:keyboard-space$$', h: COMBO}
   - {t: '7', s: '&'}
