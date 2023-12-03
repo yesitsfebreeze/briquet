@@ -11,6 +11,8 @@
   )
   (fp_arc (start 2.304887 0.000001) (mid 0.963113 2.094019) (end -1.499999 1.750001)
     (stroke (width 0.6) (type default)) (layer "B.SilkS") (tstamp c8817b3e-80c9-4b84-be99-48210a4f2025))
+  (fp_rect (start -8.75 -8.75) (end 8.75 8.75)
+    (stroke (width 0.1) (type default)) (fill none) (layer "User.1") (tstamp 16dc9917-f504-4a83-ba47-04947e7ced42))
   (pad "" np_thru_hole circle (at -5.499999 0.000001) (size 1.7018 1.7018) (drill 1.7018) (layers "*.Cu" "*.Mask") (tstamp 58da5926-e815-4754-a695-155a53695a61))
   (pad "" np_thru_hole circle (at -5.219999 -4.199999) (size 0.9906 0.9906) (drill 0.9906) (layers "*.Cu" "*.Mask") (tstamp 367edcd6-6d05-4738-a8a9-0483b4f7cbe6))
   (pad "" np_thru_hole circle (at 0.000001 0.000001) (size 3.429 3.429) (drill 3.429) (layers "*.Cu" "*.Mask") (tstamp 628ea0ba-f8f4-46b6-8c10-38a08e1db33b))
