@@ -264,6 +264,17 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
         };
+
+        eql_only: eql_only {
+            compatible = "zmk,behavior-mod-morph";
+            label = "EQUAL_ONLY";
+            bindings = <&kp EQUAL>, <&none>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+
+        
     };
 
     macros {
@@ -322,7 +333,7 @@
 
         RAISE {
             bindings = <
-&none   &none   &none   &none   &none  &none        &kp N1                    &kp N2       &kp N3                   &none
+&none   &none   &none   &none   &none  &none        &kp N1                    &kp N2       &kp N3                   &eql_only
 &none   &none   &none   &none   &none  &none        &hold_four_dollar LALT 0  &ht RGUI N5  &hold_six_caret RCTRL 0  &hold_ent_bsp LEFT_SHIFT 0
 &none   &none   &none   &none   &none  &lt 3 SPACE  &kp N7                    &kp N8       &nine_tilde              &zero_del
             >;
