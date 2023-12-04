@@ -115,7 +115,6 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
         };
-        
 
         six_caret: six_caret {
             compatible = "zmk,behavior-mod-morph";
@@ -125,7 +124,7 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
         };
-        
+
         nine_tilde: nine_tilde {
             compatible = "zmk,behavior-mod-morph";
             label = "NINE_TILDE";
@@ -256,6 +255,15 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
         };
+
+        zero_del: zero_del {
+            compatible = "zmk,behavior-mod-morph";
+            label = "ZERO_DEL";
+            bindings = <&kp N0>, <&kp DEL>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
     };
 
     macros {
@@ -314,9 +322,9 @@
 
         RAISE {
             bindings = <
-&gresc   &mkp LCLK               &mmv MOVE_UP    &mkp RCLK                 &none  &none        &kp N1             &kp N2       &kp N3              &none
-&kp TAB  &mmv MOVE_LEFT          &mmv MOVE_DOWN  &mmv MOVE_RIGHT           &none  &none        &hold_four_dollar LALT 0  &ht RGUI N5  &hold_six_caret RCTRL 0  &hold_ent_bsp LEFT_SHIFT 0
-&none    &mwh SCROLL_UP  &mkp MCLK       &mwh SCROLL_DOWN  &none  &lt 3 SPACE  &kp N7             &kp N8       &nine_tilde         &kp N0
+&gresc   &mkp LCLK       &mmv MOVE_UP    &mkp RCLK         &none  &none        &kp N1                    &kp N2       &kp N3                   &none
+&kp TAB  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT   &none  &none        &hold_four_dollar LALT 0  &ht RGUI N5  &hold_six_caret RCTRL 0  &hold_ent_bsp LEFT_SHIFT 0
+&none    &mwh SCROLL_UP  &mkp MCLK       &mwh SCROLL_DOWN  &none  &lt 3 SPACE  &kp N7                    &kp N8       &nine_tilde              &zero_del
             >;
 
             label = "RAISE";
