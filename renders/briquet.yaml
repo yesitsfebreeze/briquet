@@ -66,8 +66,8 @@ layers:
   - ''
   - ''
   - ''
-  - ''
-  - ''
+  - KP SUBTRACT
+  - KP PLUS
   - {t: '1', s: '!'}
   - {t: '2', s: '@'}
   - {t: '3', s: '#'}
@@ -76,8 +76,8 @@ layers:
   - ''
   - ''
   - ''
-  - ''
-  - ''
+  - KP DIVIDE
+  - KP MULTIPLY
   - {t: '4', h: '$$mdi:apple-keyboard-option$$', s: $}
   - {t: '5', h: '$$mdi:microsoft-windows$$', s: '%'}
   - {t: '6', h: '$$mdi:apple-keyboard-control$$', s: ^}
