@@ -312,7 +312,7 @@
 
         LOWER {
             bindings = <
-&gresc     &kp HOME   &kp UP     &kp END    &lbrkt       &rbrkt  &none     &none                 &none               &kp EQUAL
+&gresc     &kp HOME   &kp UP     &kp END    &lbrkt       &rbrkt  &and      &or                   &ma_pointer         &kp EQUAL
 &kp TAB    &kp LEFT   &kp DOWN   &kp RIGHT  &lprn        &rpen   &kp LALT  &hold_semicol LGUI 0  &hold_quot LCTRL 0  &hold_ent_bsp LEFT_SHIFT 0
 &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &lt 3 SPACE  &none   &slash    &com_excl             &dot_ques           &kp MINUS
             >;
