@@ -861,6 +861,7 @@ rect.key.ghost {
 <g transform="translate(0, 80)">
 <g transform="translate(40, 40)" class="key keypos-0">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
+<text x="0" y="0" class="key tap">=</text>
 </g>
 <g transform="translate(120, 40)" class="key keypos-1">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
