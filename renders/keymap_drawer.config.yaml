@@ -607,6 +607,10 @@ parse_config:
       tap: "="
       shifted: "+"
     PLUS: +
+    KP_PLUS: +
+    KP_SUBSTRACT: -
+    KP_DIVIDE: /
+    KP_MULTIPLY: *
     MINUS:
       tap: "-"
       shifted: "_"
