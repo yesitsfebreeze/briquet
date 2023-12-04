@@ -745,12 +745,17 @@ rect.key.ghost {
 </g>
 <g transform="translate(560, 40)" class="key keypos-6">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
+<text x="0" y="0" class="key tap">&amp;</text>
+<text x="0" y="-34" class="key shifted">&amp;&amp;</text>
 </g>
 <g transform="translate(640, 40)" class="key keypos-7">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
+<text x="0" y="0" class="key tap">|</text>
+<text x="0" y="-34" class="key shifted">||</text>
 </g>
 <g transform="translate(720, 40)" class="key keypos-8">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
+<text x="0" y="0" class="key tap">-&gt;</text>
 </g>
 <g transform="translate(800, 40)" class="key keypos-9">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>

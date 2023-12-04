@@ -37,9 +37,9 @@ layers:
   - $$mdi:ray-start-arrow$$
   - {t: '[', s: <}
   - {t: ']', s: '>'}
-  - ''
-  - ''
-  - ''
+  - {t: '&', s: '&&'}
+  - {t: '|', s: '||'}
+  - ->
   - {t: '=', s: +}
   - $$mdi:keyboard-tab$$
   - $$mdi:menu-left-outline$$
