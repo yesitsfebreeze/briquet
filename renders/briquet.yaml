@@ -103,7 +103,7 @@ layers:
   - F2
   - F3
   - ''
-  - ''
+  - $$mdi:arrow-up-bold$$
   - ''
   - ==
   - ''
