@@ -112,7 +112,7 @@ layers:
   - F4
   - F5
   - F6
-  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - {t: '$$mdi:keyboard-return$$', h: '$$mdi:arrow-up-bold$$'}
   - ''
   - ''
   - ''
