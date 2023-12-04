@@ -62,20 +62,20 @@ layers:
   - {t: ., s: '?'}
   - {t: '-', s: _}
   RAISE:
-  - {t: '$$mdi:keyboard-esc$$', s: '`'}
-  - MB1
-  - $$mdi:mouse$$
-  - MB2
+  - ''
+  - ''
+  - ''
+  - ''
   - ''
   - ''
   - {t: '1', s: '!'}
   - {t: '2', s: '@'}
   - {t: '3', s: '#'}
   - ''
-  - $$mdi:keyboard-tab$$
-  - $$mdi:mouse$$
-  - $$mdi:mouse$$
-  - $$mdi:mouse$$
+  - ''
+  - ''
+  - ''
+  - ''
   - ''
   - ''
   - {t: '4', h: '$$mdi:apple-keyboard-option$$', s: $}
@@ -83,9 +83,9 @@ layers:
   - {t: '6', h: '$$mdi:apple-keyboard-control$$', s: ^}
   - {t: '$$mdi:keyboard-return$$', h: '$$mdi:arrow-up-bold$$', s: '$$mdi:backspace$$'}
   - ''
-  - $$mdi:mouse-move-up$$
-  - MB3
-  - $$mdi:mouse-move-down$$
+  - ''
+  - ''
+  - ''
   - {type: held}
   - {t: '$$mdi:keyboard-space$$', h: COMBO}
   - {t: '7', s: '&'}

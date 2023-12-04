@@ -861,20 +861,15 @@ rect.key.ghost {
 <g transform="translate(0, 80)">
 <g transform="translate(40, 40)" class="key keypos-0">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
-<use href="#mdi:keyboard-esc" xlink:href="#mdi:keyboard-esc" x="-13" y="-13" height="26" width="26.0" class="key tap glyph mdi:keyboard-esc"/>
-<text x="0" y="-34" class="key shifted">`</text>
 </g>
 <g transform="translate(120, 40)" class="key keypos-1">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
-<text x="0" y="0" class="key tap">MB1</text>
 </g>
 <g transform="translate(200, 40)" class="key keypos-2">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
-<use href="#mdi:mouse" xlink:href="#mdi:mouse" x="-13" y="-13" height="26" width="26.0" class="key tap glyph mdi:mouse"/>
 </g>
 <g transform="translate(280, 40)" class="key keypos-3">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
-<text x="0" y="0" class="key tap">MB2</text>
 </g>
 <g transform="translate(360, 40)" class="key keypos-4">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
@@ -902,19 +897,15 @@ rect.key.ghost {
 </g>
 <g transform="translate(40, 120)" class="key keypos-10">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
-<use href="#mdi:keyboard-tab" xlink:href="#mdi:keyboard-tab" x="-13" y="-13" height="26" width="26.0" class="key tap glyph mdi:keyboard-tab"/>
 </g>
 <g transform="translate(120, 120)" class="key keypos-11">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
-<use href="#mdi:mouse" xlink:href="#mdi:mouse" x="-13" y="-13" height="26" width="26.0" class="key tap glyph mdi:mouse"/>
 </g>
 <g transform="translate(200, 120)" class="key keypos-12">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
-<use href="#mdi:mouse" xlink:href="#mdi:mouse" x="-13" y="-13" height="26" width="26.0" class="key tap glyph mdi:mouse"/>
 </g>
 <g transform="translate(280, 120)" class="key keypos-13">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
-<use href="#mdi:mouse" xlink:href="#mdi:mouse" x="-13" y="-13" height="26" width="26.0" class="key tap glyph mdi:mouse"/>
 </g>
 <g transform="translate(360, 120)" class="key keypos-14">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
@@ -951,15 +942,12 @@ rect.key.ghost {
 </g>
 <g transform="translate(120, 200)" class="key keypos-21">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
-<use href="#mdi:mouse-move-up" xlink:href="#mdi:mouse-move-up" x="-13" y="-13" height="26" width="26.0" class="key tap glyph mdi:mouse-move-up"/>
 </g>
 <g transform="translate(200, 200)" class="key keypos-22">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
-<text x="0" y="0" class="key tap">MB3</text>
 </g>
 <g transform="translate(280, 200)" class="key keypos-23">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
-<use href="#mdi:mouse-move-down" xlink:href="#mdi:mouse-move-down" x="-13" y="-13" height="26" width="26.0" class="key tap glyph mdi:mouse-move-down"/>
 </g>
 <g transform="translate(360, 200)" class="key held keypos-24">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key held"/>
