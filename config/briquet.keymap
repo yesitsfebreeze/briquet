@@ -107,19 +107,29 @@
             mods = <(MOD_LSFT)>;
         };
 
-        nine_tilde: nine_tilde {
-            compatible = "zmk,behavior-mod-morph";
-            label = "NINE_TILDE";
-            bindings = <&kp N9>, <&kp TILDE>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT)>;
-        };
-
         four_dollar: four_dollar {
             compatible = "zmk,behavior-mod-morph";
             label = "FOUR_DOLLAR";
             bindings = <&kp N4>, <&kp DOLLAR>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+        
+
+        six_caret: six_caret {
+            compatible = "zmk,behavior-mod-morph";
+            label = "SIX_CARET";
+            bindings = <&kp N6>, <&kp CARET>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+        
+        nine_tilde: nine_tilde {
+            compatible = "zmk,behavior-mod-morph";
+            label = "NINE_TILDE";
+            bindings = <&kp N9>, <&kp TILDE>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
@@ -208,10 +218,20 @@
             mods = <(MOD_LSFT)>;
         };
 
-        hold_four_dollar: hold_ent_sft {
+        hold_four_dollar: hold_four_dollar {
             compatible = "zmk,behavior-hold-tap";
             label = "Hold&Four";
             bindings = <&kp>, <&four_dollar>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <170>;
+            flavor = "tap-preferred";
+        };
+
+        hold_six_caret: hold_six_caret {
+            compatible = "zmk,behavior-hold-tap";
+            label = "Hold&Six";
+            bindings = <&kp>, <&six_caret>;
 
             #binding-cells = <2>;
             tapping-term-ms = <170>;
@@ -295,7 +315,7 @@
         RAISE {
             bindings = <
 &gresc   &mkp LCLK               &mmv MOVE_UP    &mkp RCLK                 &none  &none        &kp N1             &kp N2       &kp N3              &none
-&kp TAB  &mmv MOVE_LEFT          &mmv MOVE_DOWN  &mmv MOVE_RIGHT           &none  &none        &hold_four_dollar LALT 0  &ht RGUI N5  &ht RCTRL NUMBER_6  &hold_ent_bsp LEFT_SHIFT 0
+&kp TAB  &mmv MOVE_LEFT          &mmv MOVE_DOWN  &mmv MOVE_RIGHT           &none  &none        &hold_four_dollar LALT 0  &ht RGUI N5  &hold_six_caret RCTRL 0  &hold_ent_bsp LEFT_SHIFT 0
 &none    &mwh SCROLL_UP  &mkp MCLK       &mwh SCROLL_DOWN  &none  &lt 3 SPACE  &kp N7             &kp N8       &nine_tilde         &kp N0
             >;
 
