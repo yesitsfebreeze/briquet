@@ -322,9 +322,9 @@
 
         RAISE {
             bindings = <
-&gresc   &mkp LCLK       &mmv MOVE_UP    &mkp RCLK         &none  &none        &kp N1                    &kp N2       &kp N3                   &none
-&kp TAB  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT   &none  &none        &hold_four_dollar LALT 0  &ht RGUI N5  &hold_six_caret RCTRL 0  &hold_ent_bsp LEFT_SHIFT 0
-&none    &mwh SCROLL_UP  &mkp MCLK       &mwh SCROLL_DOWN  &none  &lt 3 SPACE  &kp N7                    &kp N8       &nine_tilde              &zero_del
+&none   &none   &none   &none   &none  &none        &kp N1                    &kp N2       &kp N3                   &none
+&none   &none   &none   &none   &none  &none        &hold_four_dollar LALT 0  &ht RGUI N5  &hold_six_caret RCTRL 0  &hold_ent_bsp LEFT_SHIFT 0
+&none   &none   &none   &none   &none  &lt 3 SPACE  &kp N7                    &kp N8       &nine_tilde              &zero_del
             >;
 
             label = "RAISE";
