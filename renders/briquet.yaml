@@ -93,20 +93,20 @@ layers:
   - {t: '9', s: '~'}
   - {t: '0', s: '$$mdi:backspace-reverse-outline$$'}
   COMBO:
-  - ''
-  - {t: '&', s: '&&'}
-  - {t: '|', s: '||'}
-  - ->
+  - {t: '$$mdi:keyboard-esc$$', s: '`'}
+  - MB1
+  - $$mdi:mouse$$
+  - MB2
   - ''
   - ''
   - F1
   - F2
   - F3
   - ''
-  - $$mdi:arrow-up-bold$$
-  - ''
-  - ==
-  - ''
+  - $$mdi:keyboard-tab$$
+  - $$mdi:mouse$$
+  - $$mdi:mouse$$
+  - $$mdi:mouse$$
   - ''
   - ''
   - F4
@@ -114,9 +114,9 @@ layers:
   - F6
   - {t: '$$mdi:keyboard-return$$', h: '$$mdi:arrow-up-bold$$'}
   - ''
-  - ''
-  - ''
-  - ''
+  - $$mdi:mouse-move-up$$
+  - MB3
+  - $$mdi:mouse-move-down$$
   - {type: held}
   - {type: held}
   - F7
