@@ -91,7 +91,7 @@ layers:
   - {t: '7', s: '&'}
   - {t: '8', s: '*'}
   - {t: '9', s: '~'}
-  - {t: '0', s: )}
+  - {t: '0', s: '$$mdi:backspace-reverse-outline$$'}
   COMBO:
   - ''
   - {t: '&', s: '&&'}
