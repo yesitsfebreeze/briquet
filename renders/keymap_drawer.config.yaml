@@ -577,8 +577,8 @@ parse_config:
     "&mkp RCLK": "MB2"
     "&mkp MCLK": "MB3"
 
-    "&mouse_wheel SCROLL_DOWN": $$mdi:mouse-move-down$$
-    "&mouse_wheel SCROLL_UP": $$mdi:mouse-move-up$$
+    "&mwh SCROLL_DOWN": $$mdi:mouse-move-down$$
+    "&mwh SCROLL_UP": $$mdi:mouse-move-up$$
 
   # ZMK
   zmk_keycode_map:
