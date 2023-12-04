@@ -24,12 +24,6 @@
 #define SCROLL_UP SCROLL_VERT(MOUSE_SCROLL_MAX)
 #define SCROLL_DOWN SCROLL_VERT(-MOUSE_SCROLL_MAX)
 
-<<<<<<< Updated upstream
-&mwh {
-    time-to-max-speed-ms = <1000>;
-};
-
-=======
 &mmv {
     time-to-max-speed-ms = <10>;
     acceleration-exponent = <1>;
@@ -40,7 +34,6 @@
     acceleration-exponent = <1>;
 };
 
->>>>>>> Stashed changes
 /* Layers */
 
 #define BASE 0
