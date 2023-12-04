@@ -116,6 +116,15 @@
             mods = <(MOD_LSFT)>;
         };
 
+        four_dollar: four_dollar {
+            compatible = "zmk,behavior-mod-morph";
+            label = "FOUR_DOLLAR";
+            bindings = <&kp N4>, <&kp DOLLAR>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+
         semi_col: semi_col {
             compatible = "zmk,behavior-mod-morph";
             label = "SEMI_COL";
@@ -199,7 +208,17 @@
             mods = <(MOD_LSFT)>;
         };
 
-        hold_ent_bsp: hold_ent_sft {
+        hold_four_dollar: hold_ent_sft {
+            compatible = "zmk,behavior-hold-tap";
+            label = "Hold&Four";
+            bindings = <&kp>, <&four_dollar>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <170>;
+            flavor = "tap-preferred";
+        };
+
+        hold_ent_bsp: hold_ent_bsp {
             compatible = "zmk,behavior-hold-tap";
             label = "Hold&Enter";
             bindings = <&kp>, <&entbsp>;
@@ -276,7 +295,7 @@
         RAISE {
             bindings = <
 &gresc   &mkp LCLK               &mmv MOVE_UP    &mkp RCLK                 &none  &none        &kp N1             &kp N2       &kp N3              &none
-&kp TAB  &mmv MOVE_LEFT          &mmv MOVE_DOWN  &mmv MOVE_RIGHT           &none  &none        &ht LALT NUMBER_4  &ht RGUI N5  &ht RCTRL NUMBER_6  &hold_ent_bsp LEFT_SHIFT 0
+&kp TAB  &mmv MOVE_LEFT          &mmv MOVE_DOWN  &mmv MOVE_RIGHT           &none  &none        &hold_four_dollar LALT 0  &ht RGUI N5  &ht RCTRL NUMBER_6  &hold_ent_bsp LEFT_SHIFT 0
 &none    &mwh SCROLL_UP  &mkp MCLK       &mwh SCROLL_DOWN  &none  &lt 3 SPACE  &kp N7             &kp N8       &nine_tilde         &kp N0
             >;
 
