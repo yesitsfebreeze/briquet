@@ -45,6 +45,12 @@
 <svg id="mdi:mouse">
 <svg xmlns="http://www.w3.org/2000/svg" id="mdi-mouse" viewBox="0 0 24 24"><path d="M11,1.07C7.05,1.56 4,4.92 4,9H11M4,15A8,8 0 0,0 12,23A8,8 0 0,0 20,15V11H4M13,1.07V9H20C20,4.92 16.94,1.56 13,1.07Z" /></svg>
 </svg>
+<svg id="mdi:mouse-move-down">
+<svg xmlns="http://www.w3.org/2000/svg" id="mdi-mouse-move-down" viewBox="0 0 24 24"><path d="M7 9H2C2 6.04 4.17 3.57 7 3.09V9M20 7H18V13H15L19 17L23 13H20V7M9 3.09V9H14C14 6.04 11.83 3.57 9 3.09M2 15C2 18.3 4.7 21 8 21S14 18.3 14 15V11H2V15Z" /></svg>
+</svg>
+<svg id="mdi:mouse-move-up">
+<svg xmlns="http://www.w3.org/2000/svg" id="mdi-mouse-move-up" viewBox="0 0 24 24"><path d="M7 9H2C2 6.04 4.17 3.57 7 3.09V9M18 17H20V11H23L19 7L15 11H18V17M9 3.09V9H14C14 6.04 11.83 3.57 9 3.09M2 15C2 18.3 4.7 21 8 21S14 18.3 14 15V11H2V15Z" /></svg>
+</svg>
 <svg id="mdi:ray-end-arrow">
 <svg xmlns="http://www.w3.org/2000/svg" id="mdi-ray-end-arrow" viewBox="0 0 24 24"><path d="M1,12L5,16V13H17.17C17.58,14.17 18.69,15 20,15A3,3 0 0,0 23,12A3,3 0 0,0 20,9C18.69,9 17.58,9.83 17.17,11H5V8L1,12Z" /></svg>
 </svg>
@@ -938,9 +944,7 @@ rect.key.ghost {
 </g>
 <g transform="translate(120, 200)" class="key keypos-21">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
-<text x="0" y="0" class="key tap">
-<tspan x="0" dy="-0.5em" style="font-size: 60%">&amp;mwh</tspan><tspan x="0" dy="1.0em" style="font-size: 60%">SCROLL_VERT(100)</tspan>
-</text>
+<use href="#mdi:mouse-move-up" xlink:href="#mdi:mouse-move-up" x="-13" y="-13" height="26" width="26.0" class="key tap glyph mdi:mouse-move-up"/>
 </g>
 <g transform="translate(200, 200)" class="key keypos-22">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
@@ -948,9 +952,7 @@ rect.key.ghost {
 </g>
 <g transform="translate(280, 200)" class="key keypos-23">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
-<text x="0" y="0" class="key tap">
-<tspan x="0" dy="-0.5em" style="font-size: 60%">&amp;mwh</tspan><tspan x="0" dy="1.0em" style="font-size: 60%">SCROLL_VERT(-100)</tspan>
-</text>
+<use href="#mdi:mouse-move-down" xlink:href="#mdi:mouse-move-down" x="-13" y="-13" height="26" width="26.0" class="key tap glyph mdi:mouse-move-down"/>
 </g>
 <g transform="translate(360, 200)" class="key held keypos-24">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key held"/>

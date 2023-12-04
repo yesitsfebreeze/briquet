@@ -83,9 +83,9 @@ layers:
   - {t: '6', h: '$$mdi:apple-keyboard-control$$'}
   - {t: '$$mdi:keyboard-return$$', h: '$$mdi:arrow-up-bold$$', s: '$$mdi:backspace$$'}
   - ''
-  - '&mwh SCROLL_VERT(100)'
+  - $$mdi:mouse-move-up$$
   - MB3
-  - '&mwh SCROLL_VERT(-100)'
+  - $$mdi:mouse-move-down$$
   - {type: held}
   - {t: '$$mdi:keyboard-space$$', h: COMBO}
   - {t: '7', s: '&'}
