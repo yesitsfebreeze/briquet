@@ -331,9 +331,9 @@
 
         RAISE {
             bindings = <
-&eql_only  &none  &none  &none  &kp KP_SUBTRACT  &kp KP_PLUS      &kp N1                    &kp N2       &kp N3                   &eql_only
-&none      &none  &none  &none  &kp KP_DIVIDE    &kp KP_MULTIPLY  &hold_four_dollar LALT 0  &ht RGUI N5  &hold_six_caret RCTRL 0  &hold_ent_bsp LEFT_SHIFT 0
-&none      &none  &none  &none  &none            &lt 3 SPACE      &kp N7                    &kp N8       &nine_tilde              &zero_del
+&eql_only  &kp EXCL  &kp AT  &kp HASH  &kp KP_SUBTRACT  &kp KP_PLUS      &kp N1                    &kp N2       &kp N3                   &eql_only
+&none      &none     &none   &none     &kp KP_DIVIDE    &kp KP_MULTIPLY  &hold_four_dollar LALT 0  &ht RGUI N5  &hold_six_caret RCTRL 0  &hold_ent_bsp LEFT_SHIFT 0
+&none      &none     &none   &none     &none            &lt 3 SPACE      &kp N7                    &kp N8       &nine_tilde              &zero_del
             >;
 
             label = "RAISE";
