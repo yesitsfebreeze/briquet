@@ -571,8 +571,8 @@ rect.key.ghost {
   translate: 25px -25px;
 }
 </style>
-<g transform="translate(0, 0)" class="layer-BASE">
-<text x="0" y="40" class="label">BASE</text>
+<g transform="translate(0, 0)" class="layer-0">
+<text x="0" y="40" class="label">0</text>
 <g transform="translate(0, 80)">
 <g transform="translate(40, 40)" class="key keypos-0">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
@@ -687,12 +687,12 @@ rect.key.ghost {
 <g transform="translate(360, 200)" class="key keypos-24">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
 <use href="#mdi:keyboard-space" xlink:href="#mdi:keyboard-space" x="-13" y="-13" height="26" width="26.0" class="key tap glyph mdi:keyboard-space"/>
-<text x="0" y="34" class="key hold">RAISE</text>
+<text x="0" y="34" class="key hold">2</text>
 </g>
 <g transform="translate(480, 200)" class="key keypos-25">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
 <use href="#mdi:keyboard-space" xlink:href="#mdi:keyboard-space" x="-13" y="-13" height="26" width="26.0" class="key tap glyph mdi:keyboard-space"/>
-<text x="0" y="34" class="key hold">LOWER</text>
+<text x="0" y="34" class="key hold">1</text>
 </g>
 <g transform="translate(560, 200)" class="key keypos-26">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
@@ -713,8 +713,8 @@ rect.key.ghost {
 </g>
 </g>
 </g>
-<g transform="translate(0, 320)" class="layer-LOWER">
-<text x="0" y="40" class="label">LOWER</text>
+<g transform="translate(0, 320)" class="layer-1">
+<text x="0" y="40" class="label">1</text>
 <g transform="translate(0, 80)">
 <g transform="translate(40, 40)" class="key keypos-0">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
@@ -829,7 +829,7 @@ rect.key.ghost {
 <g transform="translate(360, 200)" class="key keypos-24">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
 <use href="#mdi:keyboard-space" xlink:href="#mdi:keyboard-space" x="-13" y="-13" height="26" width="26.0" class="key tap glyph mdi:keyboard-space"/>
-<text x="0" y="34" class="key hold">COMBO</text>
+<text x="0" y="34" class="key hold">3</text>
 </g>
 <g transform="translate(480, 200)" class="key held keypos-25">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key held"/>
@@ -856,8 +856,8 @@ rect.key.ghost {
 </g>
 </g>
 </g>
-<g transform="translate(0, 640)" class="layer-RAISE">
-<text x="0" y="40" class="label">RAISE</text>
+<g transform="translate(0, 640)" class="layer-2">
+<text x="0" y="40" class="label">2</text>
 <g transform="translate(0, 80)">
 <g transform="translate(40, 40)" class="key keypos-0">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
@@ -971,7 +971,7 @@ rect.key.ghost {
 <g transform="translate(480, 200)" class="key keypos-25">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
 <use href="#mdi:keyboard-space" xlink:href="#mdi:keyboard-space" x="-13" y="-13" height="26" width="26.0" class="key tap glyph mdi:keyboard-space"/>
-<text x="0" y="34" class="key hold">COMBO</text>
+<text x="0" y="34" class="key hold">3</text>
 </g>
 <g transform="translate(560, 200)" class="key keypos-26">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
@@ -995,8 +995,8 @@ rect.key.ghost {
 </g>
 </g>
 </g>
-<g transform="translate(0, 960)" class="layer-COMBO">
-<text x="0" y="40" class="label">COMBO</text>
+<g transform="translate(0, 960)" class="layer-3">
+<text x="0" y="40" class="label">3</text>
 <g transform="translate(0, 80)">
 <g transform="translate(40, 40)" class="key keypos-0">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
