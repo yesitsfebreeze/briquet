@@ -41,7 +41,7 @@ layers:
   - {t: '|', s: '||'}
   - ->
   - {t: '=', s: +}
-  - $$mdi:keyboard-tab$$
+  - {t: '$$mdi:keyboard-tab$$', h: '$$mdi:arrow-up-bold$$'}
   - $$mdi:menu-left-outline$$
   - $$mdi:menu-down-outline$$
   - $$mdi:menu-right-outline$$
@@ -103,7 +103,7 @@ layers:
   - F2
   - F3
   - ''
-  - $$mdi:keyboard-tab$$
+  - {t: '$$mdi:keyboard-tab$$', h: '$$mdi:arrow-up-bold$$'}
   - $$mdi:mouse$$
   - $$mdi:mouse$$
   - $$mdi:mouse$$
