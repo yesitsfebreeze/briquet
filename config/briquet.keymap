@@ -321,9 +321,9 @@
 
         LOWER {
             bindings = <
-&gresc     &kp HOME   &kp UP     &kp END    &lbrkt  &rbrkt       &and      &or                   &ma_pointer         &kp EQUAL
-&kp TAB    &kp LEFT   &kp DOWN   &kp RIGHT  &lprn   &rpen        &kp LALT  &hold_semicol LGUI 0  &hold_quot LCTRL 0  &hold_ent_bsp LEFT_SHIFT 0
-&kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &none   &lt 3 SPACE  &slash    &com_excl             &dot_ques           &kp MINUS
+&gresc          &kp HOME   &kp UP     &kp END    &lbrkt  &rbrkt       &and      &or                   &ma_pointer         &kp EQUAL
+&ht LSHIFT TAB  &kp LEFT   &kp DOWN   &kp RIGHT  &lprn   &rpen        &kp LALT  &hold_semicol LGUI 0  &hold_quot LCTRL 0  &hold_ent_bsp LEFT_SHIFT 0
+&kp LC(Z)       &kp LC(X)  &kp LC(C)  &kp LC(V)  &none   &lt 3 SPACE  &slash    &com_excl             &dot_ques           &kp MINUS
             >;
 
             label = "LOWER";
@@ -341,9 +341,9 @@
 
         COMBO {
             bindings = <
-&gresc   &mkp LCLK       &mmv MOVE_UP    &mkp RCLK         &none  &none  &kp F1  &kp F2  &kp F3  &none
-&kp TAB  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT   &none  &none  &kp F4  &kp F5  &kp F6  &ht LSHIFT ENTER
-&none    &mwh SCROLL_UP  &mkp MCLK       &mwh SCROLL_DOWN  &none  &none  &kp F7  &kp F8  &kp F9  &none
+&gresc          &mkp LCLK       &mmv MOVE_UP    &mkp RCLK         &none  &none  &kp F1  &kp F2  &kp F3  &none
+&ht LSHIFT TAB  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT   &none  &none  &kp F4  &kp F5  &kp F6  &ht LSHIFT ENTER
+&none           &mwh SCROLL_UP  &mkp MCLK       &mwh SCROLL_DOWN  &none  &none  &kp F7  &kp F8  &kp F9  &none
             >;
 
             label = "COMBO";
