@@ -11,14 +11,14 @@ layers:
   - O
   - P
   - {t: A, h: '$$mdi:arrow-up-bold$$'}
-  - {t: S, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: S, h: '$$mdi:apple-keyboard-option$$'}
   - {t: D, h: '$$mdi:microsoft-windows$$'}
-  - {t: F, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: F, h: '$$mdi:apple-keyboard-control$$'}
   - G
   - H
-  - {t: J, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: J, h: '$$mdi:apple-keyboard-control$$'}
   - {t: K, h: '$$mdi:microsoft-windows$$'}
-  - {t: L, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: L, h: '$$mdi:apple-keyboard-option$$'}
   - {t: '$$mdi:keyboard-return$$', h: '$$mdi:arrow-up-bold$$', s: '$$mdi:backspace$$'}
   - {t: Z, h: ^Z}
   - {t: X, h: ^X}
