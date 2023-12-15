@@ -17,7 +17,7 @@
 };
 
 #define MOUSE_SCROLL_MAX 30
-#define U_MOUSE_MOVE_MAX 1500                     /* <--- New max speed setting (default: 600) */
+#define U_MOUSE_MOVE_MAX 1000
 #undef MOVE_UP
 #undef MOVE_DOWN
 #undef MOVE_LEFT
