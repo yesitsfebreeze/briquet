@@ -97,8 +97,8 @@ layers:
   - MB1
   - $$mdi:mouse$$
   - MB2
-  - '&bootloader'
-  - '&bootloader'
+  - ''
+  - ''
   - F1
   - F2
   - F3
@@ -113,7 +113,7 @@ layers:
   - F5
   - F6
   - {t: '$$mdi:keyboard-return$$', h: '$$mdi:arrow-up-bold$$'}
-  - ''
+  - '&bootloader'
   - $$mdi:mouse-move-up$$
   - MB3
   - $$mdi:mouse-move-down$$
