@@ -97,8 +97,8 @@ layers:
   - MB1
   - $$mdi:mouse$$
   - MB2
-  - ''
-  - ''
+  - '&bootloader'
+  - '&bootloader'
   - F1
   - F2
   - F3
