@@ -370,9 +370,9 @@
 
         COMBO {
             bindings = <
-&gresc          &mkp LCLK       &mmv MOVE_UP    &mkp RCLK         &none  &none  &kp F1  &kp F2  &kp F3  &none
-&ht LSHIFT TAB  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT   &none  &none  &kp F4  &kp F5  &kp F6  &ht LSHIFT ENTER
-&none           &mwh SCROLL_UP  &mkp MCLK       &mwh SCROLL_DOWN  &none  &none  &kp F7  &kp F8  &kp F9  &none
+&gresc          &mkp LCLK       &mmv MOVE_UP    &mkp RCLK         &bootloader  &bootloader  &kp F1  &kp F2  &kp F3  &none
+&ht LSHIFT TAB  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT   &none        &none        &kp F4  &kp F5  &kp F6  &ht LSHIFT ENTER
+&none           &mwh SCROLL_UP  &mkp MCLK       &mwh SCROLL_DOWN  &none        &none        &kp F7  &kp F8  &kp F9  &none
             >;
 
             label = "COMBO";
