@@ -123,3 +123,6 @@ layers:
   - F8
   - F9
   - ''
+combos:
+- p: [24, 0]
+  k: LA(TAB)
