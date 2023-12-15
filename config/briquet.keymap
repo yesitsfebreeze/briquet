@@ -331,6 +331,7 @@
         alt_tab {
             bindings = <&kp LA(TAB)>;
             key-positions = <24 0>;
+            layers = <1>;
         };
     };
 
