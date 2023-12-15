@@ -42,6 +42,14 @@
 #define COMBO 3
 
 / {
+    
+    backlight: pwmleds {
+        compatible = "pwm-leds";
+        pwm_led_0 {
+            pwms = <&pwm0 0 PWM_MSEC(10) PWM_POLARITY_NORMAL>;
+        };
+    };
+
     behaviors {
         ht: ht {
             compatible = "zmk,behavior-hold-tap";
