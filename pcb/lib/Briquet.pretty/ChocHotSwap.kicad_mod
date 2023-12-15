@@ -26,4 +26,9 @@
     (scale (xyz 1 1 1))
     (rotate (xyz 90 0 0))
   )
+  (model "${KIPRJMOD}/lib/Briquet.pretty/models/Kailh_Choc_Low_Profile_Switch v1.step"
+    (offset (xyz 0 0 -3.8))
+    (scale (xyz 1 1 1))
+    (rotate (xyz 180 0 180))
+  )
 )
