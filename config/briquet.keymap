@@ -34,12 +34,12 @@
 #define SCROLL_DOWN SCROLL_VERT(-MOUSE_SCROLL_MAX)
 
 &mmv {
-    time-to-max-speed-ms = <100>;
+    time-to-max-speed-ms = <250>;
     acceleration-exponent = <2>;
 };
 
 &mwh {
-    time-to-max-speed-ms = <100>;
+    time-to-max-speed-ms = <250>;
     acceleration-exponent = <2>;
 };
 
