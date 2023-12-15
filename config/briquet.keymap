@@ -35,12 +35,12 @@
 
 &mmv {
     time-to-max-speed-ms = <100>;
-    acceleration-exponent = <1.5 >;
+    acceleration-exponent = <2>;
 };
 
 &mwh {
     time-to-max-speed-ms = <100>;
-    acceleration-exponent = <1.5>;
+    acceleration-exponent = <2>;
 };
 
 /* Layers */
