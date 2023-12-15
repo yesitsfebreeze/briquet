@@ -18,11 +18,13 @@
 
 #define MOUSE_SCROLL_MAX 30
 #define U_MOUSE_MOVE_MAX 1000
+
 #undef MOVE_UP
 #undef MOVE_DOWN
 #undef MOVE_LEFT
 #undef MOVE_RIGHT
-#define MOVE_UP MOVE_VERT(-U_MOUSE_MOVE_MAX) 
+
+#define MOVE_UP MOVE_VERT(-U_MOUSE_MOVE_MAX)
 #define MOVE_DOWN MOVE_VERT(U_MOUSE_MOVE_MAX)
 #define MOVE_LEFT MOVE_HOR(-U_MOUSE_MOVE_MAX)
 #define MOVE_RIGHT MOVE_HOR(U_MOUSE_MOVE_MAX)
@@ -51,9 +53,9 @@
 #define COMBO 3
 
 / {
-    
     backlight: pwmleds {
         compatible = "pwm-leds";
+
         pwm_led_0 {
             pwms = <&pwm0 0 PWM_MSEC(10) PWM_POLARITY_NORMAL>;
         };
@@ -323,14 +325,23 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        alt_tab {
+            bindings = <&kp LA(TAB)>;
+            key-positions = <24 0>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
         BASE {
             bindings = <
-&kp Q             &kp W        &kp E           &kp R           &kp T        &ht LC(Y) Y  &kp U            &kp I           &kp O        &kp P
+&kp Q             &kp W           &kp E           &kp R        &kp T        &ht LC(Y) Y  &kp U        &kp I           &kp O            &kp P
 &ht LEFT_SHIFT A  &ht LEFT_ALT S  &ht LEFT_GUI D  &ht LCTRL F  &kp G        &kp H        &ht RCTRL J  &ht LEFT_GUI K  &ht RIGHT_ALT L  &hold_ent_bsp LEFT_SHIFT 0
-&ht LC(Z) Z       &ht LC(X) X  &ht LC(C) C     &ht LC(V) V     &lt 1 SPACE  &lt 2 SPACE    &kp B            &kp N           &kp M        &unds_del
+&ht LC(Z) Z       &ht LC(X) X     &ht LC(C) C     &ht LC(V) V  &lt 1 SPACE  &lt 2 SPACE  &kp B        &kp N           &kp M            &unds_del
             >;
 
             label = "BASE";
