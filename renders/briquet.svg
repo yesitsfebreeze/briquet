@@ -711,12 +711,6 @@ rect.key.ghost {
 <text x="0" y="0" class="key tap">_</text>
 <use href="#mdi:backspace-reverse-outline" xlink:href="#mdi:backspace-reverse-outline" x="-9" y="-34" height="18" width="18.0" class="key shifted glyph mdi:backspace-reverse-outline"/>
 </g>
-<g class="combo combopos-0">
-<path d="M200,120 l136,68" class="combo"/>
-<path d="M200,120 l-136,-68" class="combo"/>
-<rect rx="4" ry="4" x="182" y="102" width="36" height="36" class="combo"/>
-<text x="200" y="120" class="combo tap">LA(TAB)</text>
-</g>
 </g>
 </g>
 <g transform="translate(0, 320)" class="layer-1">
@@ -1006,12 +1000,6 @@ rect.key.ghost {
 <text x="0" y="0" class="key tap">0</text>
 <use href="#mdi:backspace-reverse-outline" xlink:href="#mdi:backspace-reverse-outline" x="-9" y="-34" height="18" width="18.0" class="key shifted glyph mdi:backspace-reverse-outline"/>
 </g>
-<g class="combo combopos-0">
-<path d="M200,120 l136,68" class="combo"/>
-<path d="M200,120 l-136,-68" class="combo"/>
-<rect rx="4" ry="4" x="182" y="102" width="36" height="36" class="combo"/>
-<text x="200" y="120" class="combo tap">LA(TAB)</text>
-</g>
 </g>
 </g>
 <g transform="translate(0, 960)" class="layer-3">
@@ -1130,12 +1118,6 @@ rect.key.ghost {
 </g>
 <g transform="translate(800, 200)" class="key keypos-29">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
-</g>
-<g class="combo combopos-0">
-<path d="M200,120 l136,68" class="combo"/>
-<path d="M200,120 l-136,-68" class="combo"/>
-<rect rx="4" ry="4" x="182" y="102" width="36" height="36" class="combo"/>
-<text x="200" y="120" class="combo tap">LA(TAB)</text>
 </g>
 </g>
 </g>

@@ -126,3 +126,4 @@ layers:
 combos:
 - p: [24, 0]
   k: LA(TAB)
+  l: ['1']
