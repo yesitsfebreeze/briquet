@@ -1,10 +1,10 @@
 manifest:
   remotes:
-    - name: yesitsfebreeze
-      url-base: https://github.com/yesitsfebreeze
+    - name: urob
+      url-base: https://github.com/urob
   projects:
     - name: zmk
-      remote: yesitsfebreeze
+      remote: urob
       revision: main
       import: app/west.yml
   self:
