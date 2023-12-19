@@ -1,0 +1,9 @@
+/ {
+  behaviors {
+    // This can be referenced in your key bindings via <&mod_morph_hold>
+    mod_morph_hold: mod_morph_hold {
+      compatible = "bobjoe123,user-crazy";
+      label = "BOBJOE_123_USER_CRAZY";
+    };
+  };
+};
