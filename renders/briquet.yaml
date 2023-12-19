@@ -1,5 +1,35 @@
 layers:
-  '0': [Q, W, E, R, T, Y, U, I, O, P, A, S, D, F, G, H, J, K, L, RET, Z, X, C, V, '$$mdi:keyboard-space$$', '$$mdi:keyboard-space$$', B, N, M, LS(UNDER)]
+  '0':
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - {t: Y, h: ^Y}
+  - U
+  - I
+  - O
+  - P
+  - {t: A, h: '$$mdi:arrow-up-bold$$'}
+  - {t: S, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: D, h: '$$mdi:microsoft-windows$$'}
+  - {t: F, h: '$$mdi:apple-keyboard-control$$'}
+  - G
+  - H
+  - {t: J, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: K, h: '$$mdi:microsoft-windows$$'}
+  - {t: L, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: '$$mdi:keyboard-return$$', h: '$$mdi:arrow-up-bold$$', s: '$$mdi:backspace$$'}
+  - {t: Z, h: ^Z}
+  - {t: X, h: ^X}
+  - {t: C, h: ^C}
+  - {t: V, h: ^V}
+  - {t: '$$mdi:keyboard-space$$', h: '1'}
+  - {t: '$$mdi:keyboard-space$$', h: '2'}
+  - B
+  - N
+  - M
+  - {t: _, s: '$$mdi:backspace-reverse-outline$$'}
   '1':
   - {t: '$$mdi:keyboard-esc$$', s: '`'}
   - $$mdi:ray-end-arrow$$
@@ -25,7 +55,7 @@ layers:
   - ^X
   - ^C
   - ^V
-  - ''
+  - {type: held}
   - {t: '$$mdi:keyboard-space$$', h: '3'}
   - {t: /, s: \}
   - {t: ',', s: '!'}
@@ -57,7 +87,7 @@ layers:
   - '*'
   - '~'
   - {t: '$$mdi:keyboard-space$$', h: '3'}
-  - ''
+  - {type: held}
   - {t: '7', s: '&'}
   - {t: '8', s: '*'}
   - {t: '9', s: '~'}
@@ -87,7 +117,7 @@ layers:
   - $$mdi:mouse-move-up$$
   - MB3
   - $$mdi:mouse-move-down$$
-  - ''
+  - {type: held}
   - {type: held}
   - F7
   - F8
