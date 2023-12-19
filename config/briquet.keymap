@@ -292,6 +292,15 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
         };
+
+        com_dot: com_dot {
+            compatible = "zmk,behavior-mod-morph";
+            label = "COM_DOT";
+            bindings = <&kp COMMA>, <&kp PERIOD>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
     };
 
     macros {
@@ -342,7 +351,7 @@
             bindings = <
 &kp Q             &kp W           &kp E           &kp R        &kp T        &ht LC(Y) Y  &kp U        &kp I           &kp O            &kp P
 &ht LEFT_SHIFT A  &ht LEFT_ALT S  &ht LEFT_GUI D  &ht LCTRL F  &kp G        &kp H        &ht RCTRL J  &ht LEFT_GUI K  &ht RIGHT_ALT L  &hold_ent_bsp LEFT_SHIFT 0
-&ht LC(Z) Z       &ht LC(X) X     &ht LC(C) C     &ht LC(V) V  &lt 1 SPACE  &lt 2 SPACE  &kp B        &kp N           &kp M            &unds_del
+&ht LC(Z) Z       &ht LC(X) X     &ht LC(C) C     &ht LC(V) V  &lt 1 SPACE  &com_dot     &kp B        &kp N           &kp M            &unds_del
             >;
 
             label = "BASE";
