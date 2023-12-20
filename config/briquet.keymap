@@ -125,6 +125,15 @@
             mods = <(MOD_LSFT)>;
         };
 
+        bspent: bspent {
+            compatible = "zmk,behavior-mod-morph";
+            label = "BSPENT";
+            bindings = <&kp BACKSPACE>, <&kp ENTER>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+
         slash: slash {
             compatible = "zmk,behavior-mod-morph";
             label = "SLASH";
@@ -292,6 +301,16 @@
             flavor = "tap-preferred";
         };
 
+        hold_bsp_ent: hold_bsp_ent {
+            compatible = "zmk,behavior-hold-tap";
+            label = "Hold&BSP";
+            bindings = <&kp>, <&bspent>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <170>;
+            flavor = "tap-preferred";
+        };
+
         unds_del: unds_del {
             compatible = "zmk,behavior-mod-morph";
             label = "UNDS_DEL";
@@ -386,7 +405,7 @@
         LOWER {
             bindings = <
 &gresc          &kp HOME   &kp UP     &kp END    &lbrkt       &rbrkt  &and      &or                   &ma_pointer         &kp EQUAL
-&ht LSHIFT TAB  &kp LEFT   &kp DOWN   &kp RIGHT  &lprn        &rpen   &kp LALT  &hold_semicol LGUI 0  &hold_quot LCTRL 0  &hold_ent_bsp LEFT_SHIFT 0
+&ht LSHIFT TAB  &kp LEFT   &kp DOWN   &kp RIGHT  &lprn        &rpen   &kp LALT  &hold_semicol LGUI 0  &hold_quot LCTRL 0  &hold_bsp_ent LEFT_SHIFT 0
 &kp LC(Z)       &kp LC(X)  &kp LC(C)  &kp LC(V)  &lt 3 SPACE  &none   &slash    &com_excl             &dot_ques           &kp MINUS
             >;
 
@@ -396,7 +415,7 @@
         RAISE {
             bindings = <
 &gresc  &kp EXCL    &kp AT       &kp HASH   &kp KP_SUBTRACT  &kp KP_PLUS      &kp N1                    &kp N2       &kp N3                   &eql_only
-&none   &kp DOLLAR  &kp PERCENT  &kp CARET  &kp KP_DIVIDE    &kp KP_MULTIPLY  &hold_four_dollar LALT 0  &ht RGUI N5  &hold_six_caret RCTRL 0  &hold_ent_bsp LEFT_SHIFT 0
+&none   &kp DOLLAR  &kp PERCENT  &kp CARET  &kp KP_DIVIDE    &kp KP_MULTIPLY  &hold_four_dollar LALT 0  &ht RGUI N5  &hold_six_caret RCTRL 0  &hold_bsp_ent LEFT_SHIFT 0
 &none   &kp AMPS    &kp ASTRK    &kp TILDE  &none            &lt 3 SPACE      &kp N7                    &kp N8       &nine_tilde              &zero_del
             >;
 
