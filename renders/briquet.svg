@@ -807,9 +807,9 @@ rect.key.ghost {
 </g>
 <g transform="translate(800, 120)" class="key keypos-19">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
-<use href="#mdi:keyboard-return" xlink:href="#mdi:keyboard-return" x="-13" y="-13" height="26" width="26.0" class="key tap glyph mdi:keyboard-return"/>
+<use href="#mdi:backspace" xlink:href="#mdi:backspace" x="-13" y="-13" height="26" width="26.0" class="key tap glyph mdi:backspace"/>
 <use href="#mdi:arrow-up-bold" xlink:href="#mdi:arrow-up-bold" x="-9" y="16" height="18" width="18.0" class="key hold glyph mdi:arrow-up-bold"/>
-<use href="#mdi:backspace" xlink:href="#mdi:backspace" x="-9" y="-34" height="18" width="18.0" class="key shifted glyph mdi:backspace"/>
+<use href="#mdi:keyboard-return" xlink:href="#mdi:keyboard-return" x="-9" y="-34" height="18" width="18.0" class="key shifted glyph mdi:keyboard-return"/>
 </g>
 <g transform="translate(40, 200)" class="key keypos-20">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
@@ -953,9 +953,9 @@ rect.key.ghost {
 </g>
 <g transform="translate(800, 120)" class="key keypos-19">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
-<use href="#mdi:keyboard-return" xlink:href="#mdi:keyboard-return" x="-13" y="-13" height="26" width="26.0" class="key tap glyph mdi:keyboard-return"/>
+<use href="#mdi:backspace" xlink:href="#mdi:backspace" x="-13" y="-13" height="26" width="26.0" class="key tap glyph mdi:backspace"/>
 <use href="#mdi:arrow-up-bold" xlink:href="#mdi:arrow-up-bold" x="-9" y="16" height="18" width="18.0" class="key hold glyph mdi:arrow-up-bold"/>
-<use href="#mdi:backspace" xlink:href="#mdi:backspace" x="-9" y="-34" height="18" width="18.0" class="key shifted glyph mdi:backspace"/>
+<use href="#mdi:keyboard-return" xlink:href="#mdi:keyboard-return" x="-9" y="-34" height="18" width="18.0" class="key shifted glyph mdi:keyboard-return"/>
 </g>
 <g transform="translate(40, 200)" class="key keypos-20">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
