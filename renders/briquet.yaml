@@ -72,7 +72,7 @@ layers:
   - {t: '2', s: '@'}
   - {t: '3', s: '#'}
   - '='
-  - ''
+  - {t: '$$mdi:keyboard-tab$$', h: '$$mdi:arrow-up-bold$$'}
   - $
   - '%'
   - ^
