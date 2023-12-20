@@ -687,12 +687,12 @@ rect.key.ghost {
 <g transform="translate(360, 200)" class="key keypos-24">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
 <use href="#mdi:keyboard-space" xlink:href="#mdi:keyboard-space" x="-13" y="-13" height="26" width="26.0" class="key tap glyph mdi:keyboard-space"/>
-<text x="0" y="34" class="key hold">1</text>
+<text x="0" y="34" class="key hold">2</text>
 </g>
 <g transform="translate(480, 200)" class="key keypos-25">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
 <use href="#mdi:keyboard-space" xlink:href="#mdi:keyboard-space" x="-13" y="-13" height="26" width="26.0" class="key tap glyph mdi:keyboard-space"/>
-<text x="0" y="34" class="key hold">2</text>
+<text x="0" y="34" class="key hold">1</text>
 </g>
 <g transform="translate(560, 200)" class="key keypos-26">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
@@ -827,13 +827,13 @@ rect.key.ghost {
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
 <text x="0" y="0" class="key tap">^V</text>
 </g>
-<g transform="translate(360, 200)" class="key held keypos-24">
-<rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key held"/>
-</g>
-<g transform="translate(480, 200)" class="key keypos-25">
+<g transform="translate(360, 200)" class="key keypos-24">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
 <use href="#mdi:keyboard-space" xlink:href="#mdi:keyboard-space" x="-13" y="-13" height="26" width="26.0" class="key tap glyph mdi:keyboard-space"/>
 <text x="0" y="34" class="key hold">3</text>
+</g>
+<g transform="translate(480, 200)" class="key held keypos-25">
+<rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key held"/>
 </g>
 <g transform="translate(560, 200)" class="key keypos-26">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
@@ -972,13 +972,13 @@ rect.key.ghost {
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
 <text x="0" y="0" class="key tap">~</text>
 </g>
-<g transform="translate(360, 200)" class="key keypos-24">
+<g transform="translate(360, 200)" class="key held keypos-24">
+<rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key held"/>
+</g>
+<g transform="translate(480, 200)" class="key keypos-25">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
 <use href="#mdi:keyboard-space" xlink:href="#mdi:keyboard-space" x="-13" y="-13" height="26" width="26.0" class="key tap glyph mdi:keyboard-space"/>
 <text x="0" y="34" class="key hold">3</text>
-</g>
-<g transform="translate(480, 200)" class="key held keypos-25">
-<rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key held"/>
 </g>
 <g transform="translate(560, 200)" class="key keypos-26">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
