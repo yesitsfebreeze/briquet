@@ -1,7 +1,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/mouse.h>
-#include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/led/led.h>
+#include <dt-bindings/zmk/keys.h>
 
 &pinctrl {
     spi3_default: spi3_default {
@@ -18,26 +18,22 @@
     };
 };
 
-
 &spi3 {
-  compatible = "nordic,nrf-spim";
-  status = "okay";
+    compatible = "nordic,nrf-spim";
+    status = "okay";
+    pinctrl-0 = <&spi3_default>;
+    pinctrl-1 = <&spi3_sleep>;
+    pinctrl-names = "default", "sleep";
 
-  pinctrl-0 = <&spi3_default>;
-  pinctrl-1 = <&spi3_sleep>;
-  pinctrl-names = "default", "sleep";
-
-  led_strip: ws2812@0 {
-    compatible = "worldsemi,ws2812-spi";
-
-    reg = <0>; /* ignored, but necessary for SPI bindings */
-    spi-max-frequency = <4000000>;
-
-    chain-length = <15>; /* number of LEDs */
-    spi-one-frame = <0x70>;
-    spi-zero-frame = <0x40>;
-    color-mapping = <LED_COLOR_ID_GREEN LED_COLOR_ID_RED LED_COLOR_ID_BLUE>;
-  };
+    led_strip: ws2812@0 {
+        compatible = "worldsemi,ws2812-spi";
+        reg = <0>; /* ignored, but necessary for SPI bindings */
+        spi-max-frequency = <4000000>;
+        chain-length = <15>; /* number of LEDs */
+        spi-one-frame = <0x70>;
+        spi-zero-frame = <0x40>;
+        color-mapping = <LED_COLOR_ID_GREEN LED_COLOR_ID_RED LED_COLOR_ID_BLUE>;
+    };
 };
 
 &mt {
@@ -91,7 +87,6 @@
 #define COMBO 3
 
 / {
-
     behaviors {
         ht: ht {
             compatible = "zmk,behavior-hold-tap";
@@ -382,7 +377,7 @@
             bindings = <
 &kp Q             &kp W           &kp E           &kp R        &kp T        &ht LC(Y) Y  &kp U        &kp I           &kp O            &kp P
 &ht LEFT_SHIFT A  &ht LEFT_ALT S  &ht LEFT_GUI D  &ht LCTRL F  &kp G        &kp H        &ht RCTRL J  &ht LEFT_GUI K  &ht RIGHT_ALT L  &hold_ent_bsp LEFT_SHIFT 0
-&ht LC(Z) Z       &ht LC(X) X     &ht LC(C) C     &ht LC(V) V  &lt 1 SPACE  &lt 2 SPACE  &kp B        &kp N           &kp M            &unds_del
+&ht LC(Z) Z       &ht LC(X) X     &ht LC(C) C     &ht LC(V) V  &lt 2 SPACE  &lt 1 SPACE  &kp B        &kp N           &kp M            &unds_del
             >;
 
             label = "BASE";
@@ -390,9 +385,9 @@
 
         LOWER {
             bindings = <
-&gresc          &kp HOME   &kp UP     &kp END    &lbrkt  &rbrkt       &and      &or                   &ma_pointer         &kp EQUAL
-&ht LSHIFT TAB  &kp LEFT   &kp DOWN   &kp RIGHT  &lprn   &rpen        &kp LALT  &hold_semicol LGUI 0  &hold_quot LCTRL 0  &hold_ent_bsp LEFT_SHIFT 0
-&kp LC(Z)       &kp LC(X)  &kp LC(C)  &kp LC(V)  &none   &lt 3 SPACE  &slash    &com_excl             &dot_ques           &kp MINUS
+&gresc          &kp HOME   &kp UP     &kp END    &lbrkt       &rbrkt  &and      &or                   &ma_pointer         &kp EQUAL
+&ht LSHIFT TAB  &kp LEFT   &kp DOWN   &kp RIGHT  &lprn        &rpen   &kp LALT  &hold_semicol LGUI 0  &hold_quot LCTRL 0  &hold_ent_bsp LEFT_SHIFT 0
+&kp LC(Z)       &kp LC(X)  &kp LC(C)  &kp LC(V)  &lt 3 SPACE  &none   &slash    &com_excl             &dot_ques           &kp MINUS
             >;
 
             label = "LOWER";
@@ -402,7 +397,7 @@
             bindings = <
 &gresc  &kp EXCL    &kp AT       &kp HASH   &kp KP_SUBTRACT  &kp KP_PLUS      &kp N1                    &kp N2       &kp N3                   &eql_only
 &none   &kp DOLLAR  &kp PERCENT  &kp CARET  &kp KP_DIVIDE    &kp KP_MULTIPLY  &hold_four_dollar LALT 0  &ht RGUI N5  &hold_six_caret RCTRL 0  &hold_ent_bsp LEFT_SHIFT 0
-&none   &kp AMPS    &kp ASTRK    &kp TILDE  &lt 3 SPACE      &none            &kp N7                    &kp N8       &nine_tilde              &zero_del
+&none   &kp AMPS    &kp ASTRK    &kp TILDE  &none            &lt 3 SPACE      &kp N7                    &kp N8       &nine_tilde              &zero_del
             >;
 
             label = "RAISE";
