@@ -18,7 +18,7 @@
             quick-tap-ms = <125>;
             #binding-cells = <2>;
             tapping-term-ms = <125>;
-            flavor = "hold-preferred";
+            flavor = "tap-preferred";
         };
 
         lprn: lprn {
