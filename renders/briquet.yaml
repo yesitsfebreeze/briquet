@@ -24,8 +24,8 @@ layers:
   - {t: X, h: ^X}
   - {t: C, h: ^C}
   - {t: V, h: ^V}
-  - {t: '$$mdi:keyboard-space$$', h: '1'}
   - {t: '$$mdi:keyboard-space$$', h: '2'}
+  - {t: '$$mdi:keyboard-space$$', h: '1'}
   - B
   - N
   - M
@@ -50,13 +50,13 @@ layers:
   - $$mdi:apple-keyboard-option$$
   - {t: ;, h: '$$mdi:microsoft-windows$$', s: ':'}
   - {t: '"', h: '$$mdi:apple-keyboard-control$$', s: ''''}
-  - {t: '$$mdi:keyboard-return$$', h: '$$mdi:arrow-up-bold$$', s: '$$mdi:backspace$$'}
+  - {t: '$$mdi:backspace$$', h: '$$mdi:arrow-up-bold$$', s: '$$mdi:keyboard-return$$'}
   - ^Z
   - ^X
   - ^C
   - ^V
-  - {type: held}
   - {t: '$$mdi:keyboard-space$$', h: '3'}
+  - {type: held}
   - {t: /, s: \}
   - {t: ',', s: '!'}
   - {t: ., s: '?'}
@@ -72,7 +72,7 @@ layers:
   - {t: '2', s: '@'}
   - {t: '3', s: '#'}
   - '='
-  - ''
+  - {t: '$$mdi:keyboard-tab$$', h: '$$mdi:arrow-up-bold$$'}
   - $
   - '%'
   - ^
@@ -81,13 +81,13 @@ layers:
   - {t: '4', h: '$$mdi:apple-keyboard-option$$', s: $}
   - {t: '5', h: '$$mdi:microsoft-windows$$', s: '%'}
   - {t: '6', h: '$$mdi:apple-keyboard-control$$', s: ^}
-  - {t: '$$mdi:keyboard-return$$', h: '$$mdi:arrow-up-bold$$', s: '$$mdi:backspace$$'}
+  - {t: '$$mdi:backspace$$', h: '$$mdi:arrow-up-bold$$', s: '$$mdi:keyboard-return$$'}
   - ''
   - '&'
   - '*'
   - '~'
-  - {t: '$$mdi:keyboard-space$$', h: '3'}
   - {type: held}
+  - {t: '$$mdi:keyboard-space$$', h: '3'}
   - {t: '7', s: '&'}
   - {t: '8', s: '*'}
   - {t: '9', s: '~'}
@@ -113,7 +113,7 @@ layers:
   - F5
   - F6
   - {t: '$$mdi:keyboard-return$$', h: '$$mdi:arrow-up-bold$$'}
-  - ''
+  - '&bootloader'
   - $$mdi:mouse-move-up$$
   - MB3
   - $$mdi:mouse-move-down$$
@@ -123,3 +123,7 @@ layers:
   - F8
   - F9
   - ''
+combos:
+- p: [24, 0]
+  k: LA(TAB)
+  l: ['1']
