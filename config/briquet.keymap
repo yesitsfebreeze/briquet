@@ -1,7 +1,6 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 
-#include "./rgb.h"
 #include "./mouse.h"
 
 /* Layers */
