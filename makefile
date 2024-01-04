@@ -1,4 +1,5 @@
 PHONY: sync
+
 sync:
 	@git pull
 	@git add --all
